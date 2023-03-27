@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="description" content="Text">
+    <title>Blog</title>
+    <meta name="theme-color" content="#3D4356">
+    <link rel="preload" as="image" href="assets/images/png/main-bl-main.webp">
+    <link rel="preload" as="image" href="assets/images/png/main-bl-mainMob.webp"><link rel="preload" href="assets/fonts/Roboto-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+<link rel="preload" href="assets/fonts/Roboto-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" as="image" href="assets/images/svg/logo.svg">
+    <link rel="icon" type="image/png" href="assets/images/png/favicon.png">
+    <link rel="apple-touch-icon" href="assets/images/png/favicon.png"><link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.min.css" as="style" onload="this.rel='stylesheet'">
+<noscript><link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.min.css" rel="stylesheet"></noscript>
+<link rel="preload" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" as="style" onload="this.rel='stylesheet'">
+<noscript><link href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" rel="stylesheet"></noscript>
+  <link href="assets/css/app.css?v=1678977490589" rel="stylesheet"></head>
+  <body>
+<div class="preloader">
+  <div class="preloader-logo img-wrap"> 
+    <div><img src="assets/images/svg/logo.svg" alt=""></div>
+  </div>
+</div>
+<script>
+  let preloader = document.querySelector('.preloader');
+  if (!(document.referrer.indexOf('atlassys') == -1) || !(location.href.indexOf('localhost') == -1)) {
+  	preloader.remove();
+  }
+  
+  
+  setTimeout(function () {
+  	if (preloader) {
+  		setTimeout(function () {
+  			preloader.classList.add('preloader--hide');
+  		}, 2000);
+  
+  		setTimeout(function () {
+  			preloader.style.display = 'none';
+  		}, 3500);
+  	}
+  }, 500);
+</script>
+    <div class="body__wrap">
+<header class="header">
+  <div class="center-wrap">
+    <div class="header__wrap"><a class="header__logo single-anchors img-wrap" href="/home.html#home" aria-label="Logo site">
+        <div><img src="assets/images/svg/logo.svg" alt=""></div></a>
+      <nav class="header__nav mobile--hide">
+        <ul class="header__nav-list">
+          <li class="header__nav-item"><a class="header__nav-link" href="/">Cloud platform</a></li>
+          <li class="header__nav-item header__nav-item--drop"><a class="header__nav-link" href="/">Solutions</a>
+            <div class="header__drop">
+              <ul class="header__drop-list overflow-bl">
+                <li class="header__drop-item"> <a class="header__drop-link" href="/">Dispatch Board </a></li>
+                <li class="header__drop-item"> <a class="header__drop-link" href="/">Fleet Management</a></li>
+                <li class="header__drop-item"> <a class="header__drop-link" href="/">Trip Calculator</a></li>
+                <li class="header__drop-item"> <a class="header__drop-link" href="/">Driver`s App</a></li>
+                <li class="header__drop-item"> <a class="header__drop-link" href="/">Real-time tracking</a></li>
+                <li class="header__drop-item"> <a class="header__drop-link" href="/">Payroll & Accounting</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="header__nav-item header__nav-item--drop"><a class="header__nav-link" href="/">Industries</a>
+            <div class="header__drop">
+              <ul class="header__drop-list overflow-bl">
+                <li class="header__drop-item"> <a class="header__drop-link" href="/">Logistics Service</a></li>
+                <li class="header__drop-item"> <a class="header__drop-link" href="/">Wholesale</a></li>
+                <li class="header__drop-item"> <a class="header__drop-link" href="/">Manufacturing</a></li>
+                <li class="header__drop-item"> <a class="header__drop-link" href="/">Retail</a></li>
+                <li class="header__drop-item"> <a class="header__drop-link" href="/">haigh-Tech</a></li>
+                <li class="header__drop-item"> <a class="header__drop-link" href="/">Pharma</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="header__nav-item"><a class="header__nav-link" href="/pricing.html">Pricing</a></li>
+          <li class="header__nav-item"><a class="header__nav-link" href="/about.html">About</a></li>
+          <li class="header__nav-item"><a class="header__nav-link" href="/blog.html">Blog</a></li>
+          <li class="header__nav-item"><a class="header__nav-link" href="/contacts.html">Contacts</a></li>
+        </ul>
+      </nav>
+      <div class="header__btn btn mobile--hide"> 
+        <div class="btn__title">Free consultant </div>
+      </div>
+      <div class="header__burger desktop--hide">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+  </div>
+</header>
+      <div id="scrollbar">
+        <main>
+          <section class="main-bl mobile--hide" id="home">
+            <picture>
+              <source type="image/webp" media="(max-width: 600px)">
+              <source srcset="assets/images/png/main-bl-blog.webp" type="image/webp"><img class="main-bl__bg" src="assets/images/png/main-bl-blog.png" alt="">
+            </picture><a class="main-bl__down single-anchors mobile--hide" href="#down" aria-label="Scroll down">
+              <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8 12L16 20L24 12" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg></a>
+            <div class="center-wrap">
+              <div class="main-bl__info">
+                <h1 class="main-bl__title">Blog   </h1>
+                <h3 class="main-bl__subtitle main-bl__subtitle--mt">Unlock the power of TMS with our fascinating and practical articles</h3>
+              </div>
+            </div>
+          </section>
+          <div class="breadcrumb">
+            <div class="center-wrap">
+              <ul class="breadcrumb__list">
+                <li class="breadcrumb__item"><a class="breadcrumb__link" href="/">Atlassys TMS</a></li>
+                <li class="breadcrumb__item"><a class="breadcrumb__link" href="#">blog</a></li>
+              </ul>
+            </div>
+          </div>
+<div class="blog" id="down">
+  <div class="center-wrap">
+    <h2 class="simple-title blog__simple-title desktop--hide">Blog</h2>
+    <div class="blog__slider desktop--hide"> 
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><a class="blog__item" href="/">
+              <div class="blog__item-top">
+                <h3 class="blog__item-title">Terminology Basics</h3>
+                <div class="blog__item-content content"> 
+                  <p>Lorem ipsum dolor sit amet consectetur. Nulla libero purus habitant ultricies. </p>
+                  <p>Orci morbi montes duis sed at at mi. In leo aliquam faucibus dictum sollicitudin neque. Quam enim faucibus in vel cras quam. Elit integer.</p>
+                </div>
+              </div>
+              <div class="blog__item-date">11/November/23</div>
+              <div class="blog__item-img img-wrap img-parallax">
+                <div>
+                  <picture>
+                    <source srcset="assets/images/png/blog-img.webp" type="image/webp"><img src="assets/images/png/blog-img.png" alt="">
+                  </picture>
+                </div>
+              </div>
+              <div class="blog__item-bottom">
+                <div class="blog__item-link"> 
+                  <p>read more</p>
+                  <svg viewBox="0 0 41 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M40.3536 4.35355C40.5488 4.15829 40.5488 3.84171 40.3536 3.64645L37.1716 0.464466C36.9763 0.269204 36.6597 0.269204 36.4645 0.464466C36.2692 0.659728 36.2692 0.976311 36.4645 1.17157L39.2929 4L36.4645 6.82843C36.2692 7.02369 36.2692 7.34027 36.4645 7.53553C36.6597 7.7308 36.9763 7.7308 37.1716 7.53553L40.3536 4.35355ZM0 4.5H40V3.5H0V4.5Z"></path>
+                  </svg>
+                </div>
+              </div></a></div>
+          <div class="swiper-slide"><a class="blog__item" href="/">
+              <div class="blog__item-top">
+                <h3 class="blog__item-title">Terminology Basics</h3>
+                <div class="blog__item-content content"> 
+                  <p>Lorem ipsum dolor sit amet consectetur. Nulla libero purus habitant ultricies. </p>
+                  <p>Orci morbi montes duis sed at at mi. In leo aliquam faucibus dictum sollicitudin neque. Quam enim faucibus in vel cras quam. Elit integer.</p>
+                </div>
+              </div>
+              <div class="blog__item-date">11/November/23</div>
+              <div class="blog__item-img img-wrap img-parallax">
+                <div>
+                  <picture>
+                    <source srcset="assets/images/png/blog-img2.webp" type="image/webp"><img src="assets/images/png/blog-img2.png" alt="">
+                  </picture>
+                </div>
+              </div>
+              <div class="blog__item-bottom">
+                <div class="blog__item-link"> 
+                  <p>read more</p>
+                  <svg viewBox="0 0 41 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M40.3536 4.35355C40.5488 4.15829 40.5488 3.84171 40.3536 3.64645L37.1716 0.464466C36.9763 0.269204 36.6597 0.269204 36.4645 0.464466C36.2692 0.659728 36.2692 0.976311 36.4645 1.17157L39.2929 4L36.4645 6.82843C36.2692 7.02369 36.2692 7.34027 36.4645 7.53553C36.6597 7.7308 36.9763 7.7308 37.1716 7.53553L40.3536 4.35355ZM0 4.5H40V3.5H0V4.5Z"></path>
+                  </svg>
+                </div>
+              </div></a></div>
+          <div class="swiper-slide"><a class="blog__item" href="/">
+              <div class="blog__item-top">
+                <h3 class="blog__item-title">Terminology Basics</h3>
+                <div class="blog__item-content content"> 
+                  <p>Lorem ipsum dolor sit amet consectetur. Nulla libero purus habitant ultricies. </p>
+                  <p>Orci morbi montes duis sed at at mi. In leo aliquam faucibus dictum sollicitudin neque. Quam enim faucibus in vel cras quam. Elit integer.</p>
+                </div>
+              </div>
+              <div class="blog__item-date">11/November/23</div>
+              <div class="blog__item-img img-wrap img-parallax">
+                <div>
+                  <picture>
+                    <source srcset="assets/images/png/blog-img3.webp" type="image/webp"><img src="assets/images/png/blog-img3.png" alt="">
+                  </picture>
+                </div>
+              </div>
+              <div class="blog__item-bottom">
+                <div class="blog__item-link"> 
+                  <p>read more</p>
+                  <svg viewBox="0 0 41 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M40.3536 4.35355C40.5488 4.15829 40.5488 3.84171 40.3536 3.64645L37.1716 0.464466C36.9763 0.269204 36.6597 0.269204 36.4645 0.464466C36.2692 0.659728 36.2692 0.976311 36.4645 1.17157L39.2929 4L36.4645 6.82843C36.2692 7.02369 36.2692 7.34027 36.4645 7.53553C36.6597 7.7308 36.9763 7.7308 37.1716 7.53553L40.3536 4.35355ZM0 4.5H40V3.5H0V4.5Z"></path>
+                  </svg>
+                </div>
+              </div></a></div>
+          <div class="swiper-slide"><a class="blog__item" href="/">
+              <div class="blog__item-top">
+                <h3 class="blog__item-title">Terminology Basics</h3>
+                <div class="blog__item-content content"> 
+                  <p>Lorem ipsum dolor sit amet consectetur. Nulla libero purus habitant ultricies. </p>
+                  <p>Orci morbi montes duis sed at at mi. In leo aliquam faucibus dictum sollicitudin neque. Quam enim faucibus in vel cras quam. Elit integer.</p>
+                </div>
+              </div>
+              <div class="blog__item-date">11/November/23</div>
+              <div class="blog__item-img img-wrap img-parallax">
+                <div>
+                  <picture>
+                    <source srcset="assets/images/png/blog-img4.webp" type="image/webp"><img src="assets/images/png/blog-img4.png" alt="">
+                  </picture>
+                </div>
+              </div>
+              <div class="blog__item-bottom">
+                <div class="blog__item-link"> 
+                  <p>read more</p>
+                  <svg viewBox="0 0 41 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M40.3536 4.35355C40.5488 4.15829 40.5488 3.84171 40.3536 3.64645L37.1716 0.464466C36.9763 0.269204 36.6597 0.269204 36.4645 0.464466C36.2692 0.659728 36.2692 0.976311 36.4645 1.17157L39.2929 4L36.4645 6.82843C36.2692 7.02369 36.2692 7.34027 36.4645 7.53553C36.6597 7.7308 36.9763 7.7308 37.1716 7.53553L40.3536 4.35355ZM0 4.5H40V3.5H0V4.5Z"></path>
+                  </svg>
+                </div>
+              </div></a></div>
+        </div>
+      </div>
+    </div>
+    <div class="blog__list mobile--hide"><a class="blog__item" href="/">
+        <div class="blog__item-top">
+          <h3 class="blog__item-title">Terminology Basics</h3>
+          <div class="blog__item-content content"> 
+            <p>Lorem ipsum dolor sit amet consectetur. Nulla libero purus habitant ultricies. </p>
+            <p>Orci morbi montes duis sed at at mi. In leo aliquam faucibus dictum sollicitudin neque. Quam enim faucibus in vel cras quam. Elit integer.</p>
+          </div>
+        </div>
+        <div class="blog__item-img img-wrap img-parallax">
+          <div>
+            <picture>
+              <source srcset="assets/images/png/blog-img.webp" type="image/webp"><img src="assets/images/png/blog-img.png" alt="">
+            </picture>
+          </div>
+        </div>
+        <div class="blog__item-bottom">
+          <div class="blog__item-date">11/November/23</div>
+          <div class="blog__item-link"> 
+            <p>read more</p>
+            <svg viewBox="0 0 41 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M40.3536 4.35355C40.5488 4.15829 40.5488 3.84171 40.3536 3.64645L37.1716 0.464466C36.9763 0.269204 36.6597 0.269204 36.4645 0.464466C36.2692 0.659728 36.2692 0.976311 36.4645 1.17157L39.2929 4L36.4645 6.82843C36.2692 7.02369 36.2692 7.34027 36.4645 7.53553C36.6597 7.7308 36.9763 7.7308 37.1716 7.53553L40.3536 4.35355ZM0 4.5H40V3.5H0V4.5Z"></path>
+            </svg>
+          </div>
+        </div></a><a class="blog__item" href="/">
+        <div class="blog__item-top">
+          <h3 class="blog__item-title">Terminology Basics</h3>
+          <div class="blog__item-content content"> 
+            <p>Lorem ipsum dolor sit amet consectetur. Ultricies gravida magna diam euismod placerat nec purus faucibus. Ullamcorper quis sit aliquam facilisis. Amet sed aenean velit gravida. Egestas eu morbi tincidunt morbi nullam volutpat amet.Ut quis amet phasellus porta sagittis feugiat</p>
+          </div>
+        </div>
+        <div class="blog__item-img img-wrap img-parallax">
+          <div>
+            <picture>
+              <source srcset="assets/images/png/blog-img2.webp" type="image/webp"><img src="assets/images/png/blog-img2.png" alt="">
+            </picture>
+          </div>
+        </div>
+        <div class="blog__item-bottom">
+          <div class="blog__item-date">11/November/23</div>
+          <div class="blog__item-link"> 
+            <p>read more</p>
+            <svg viewBox="0 0 41 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M40.3536 4.35355C40.5488 4.15829 40.5488 3.84171 40.3536 3.64645L37.1716 0.464466C36.9763 0.269204 36.6597 0.269204 36.4645 0.464466C36.2692 0.659728 36.2692 0.976311 36.4645 1.17157L39.2929 4L36.4645 6.82843C36.2692 7.02369 36.2692 7.34027 36.4645 7.53553C36.6597 7.7308 36.9763 7.7308 37.1716 7.53553L40.3536 4.35355ZM0 4.5H40V3.5H0V4.5Z"></path>
+            </svg>
+          </div>
+        </div></a><a class="blog__item" href="/">
+        <div class="blog__item-top">
+          <h3 class="blog__item-title">Terminology Basics</h3>
+          <div class="blog__item-content content"> 
+            <p>Vivamus nam purus id nunc eget justo sapien a pellentesque. Neque morbi vulputate proin consequat ipsum pharetra nibh urna ullamcorper.Dui habitasse porta tincidunt tempor purus adipiscing semper. Mauris amet tempor dui mauris. Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
+        <div class="blog__item-img img-wrap img-parallax">
+          <div>
+            <picture>
+              <source srcset="assets/images/png/blog-img3.webp" type="image/webp"><img src="assets/images/png/blog-img3.png" alt="">
+            </picture>
+          </div>
+        </div>
+        <div class="blog__item-bottom">
+          <div class="blog__item-date">11/November/23</div>
+          <div class="blog__item-link"> 
+            <p>read more</p>
+            <svg viewBox="0 0 41 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M40.3536 4.35355C40.5488 4.15829 40.5488 3.84171 40.3536 3.64645L37.1716 0.464466C36.9763 0.269204 36.6597 0.269204 36.4645 0.464466C36.2692 0.659728 36.2692 0.976311 36.4645 1.17157L39.2929 4L36.4645 6.82843C36.2692 7.02369 36.2692 7.34027 36.4645 7.53553C36.6597 7.7308 36.9763 7.7308 37.1716 7.53553L40.3536 4.35355ZM0 4.5H40V3.5H0V4.5Z"></path>
+            </svg>
+          </div>
+        </div></a><a class="blog__item" href="/">
+        <div class="blog__item-top">
+          <h3 class="blog__item-title">Terminology Basics</h3>
+          <div class="blog__item-content content"> 
+            <p>Auctor amet a volutpat sed tincidunt. Vestibulum nunc viverra aenean ipsum ornare tempor at at. Lorem velit laoreet morbi sodales arcu dictum. Id elementum gravida nunc quis faucibus nisi.Lorem ipsum dolor sit amet consectetur. Enim dignissim amet natoque bibendum.</p>
+          </div>
+        </div>
+        <div class="blog__item-img img-wrap img-parallax">
+          <div>
+            <picture>
+              <source srcset="assets/images/png/blog-img4.webp" type="image/webp"><img src="assets/images/png/blog-img4.png" alt="">
+            </picture>
+          </div>
+        </div>
+        <div class="blog__item-bottom">
+          <div class="blog__item-date">11/November/23</div>
+          <div class="blog__item-link"> 
+            <p>read more</p>
+            <svg viewBox="0 0 41 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M40.3536 4.35355C40.5488 4.15829 40.5488 3.84171 40.3536 3.64645L37.1716 0.464466C36.9763 0.269204 36.6597 0.269204 36.4645 0.464466C36.2692 0.659728 36.2692 0.976311 36.4645 1.17157L39.2929 4L36.4645 6.82843C36.2692 7.02369 36.2692 7.34027 36.4645 7.53553C36.6597 7.7308 36.9763 7.7308 37.1716 7.53553L40.3536 4.35355ZM0 4.5H40V3.5H0V4.5Z"></path>
+            </svg>
+          </div>
+        </div></a><a class="blog__item" href="/">
+        <div class="blog__item-top">
+          <h3 class="blog__item-title">Terminology Basics</h3>
+          <div class="blog__item-content content"> 
+            <p>Sed arcu ullamcorper sed iaculis volutpat ultricies at fermentum. Vulputate euismod sit cursus velit pretium cursus pharetra viverra. Nunc nam condimentum donec urna feugiat fames fermentum.Amet at donec pellentesque habitasse ut sit platea feugiat.</p>
+          </div>
+        </div>
+        <div class="blog__item-img img-wrap img-parallax">
+          <div>
+            <picture>
+              <source srcset="assets/images/png/blog-img5.webp" type="image/webp"><img src="assets/images/png/blog-img5.png" alt="">
+            </picture>
+          </div>
+        </div>
+        <div class="blog__item-bottom">
+          <div class="blog__item-date">11/November/23</div>
+          <div class="blog__item-link"> 
+            <p>read more</p>
+            <svg viewBox="0 0 41 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M40.3536 4.35355C40.5488 4.15829 40.5488 3.84171 40.3536 3.64645L37.1716 0.464466C36.9763 0.269204 36.6597 0.269204 36.4645 0.464466C36.2692 0.659728 36.2692 0.976311 36.4645 1.17157L39.2929 4L36.4645 6.82843C36.2692 7.02369 36.2692 7.34027 36.4645 7.53553C36.6597 7.7308 36.9763 7.7308 37.1716 7.53553L40.3536 4.35355ZM0 4.5H40V3.5H0V4.5Z"></path>
+            </svg>
+          </div>
+        </div></a>
+      <div class="blog__item blog__item--poster">
+        <div class="img-wrap img-parallax">
+          <div>
+            <picture>
+              <source srcset="assets/images/png/blog-img.webp" type="image/webp"><img src="assets/images/png/blog-img.png" alt="">
+            </picture>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<div class="pagination">
+  <div class="center-wrap">
+    <ul class="pagination__list">
+      <li class="pagination__item"><a class="pagination__link pagination__link--active" href="/">1</a></li>
+      <li class="pagination__item"><a class="pagination__link" href="/">2</a></li>
+      <li class="pagination__item"><a class="pagination__link" href="/">3</a></li>
+      <li class="pagination__item"><a class="pagination__link" href="/">4</a></li>
+    </ul>
+  </div>
+</div>
+</div>
+<section class="instagram">
+  <div class="center-wrap"> 
+    <h2 class="instagram__simple-title simple-title">Instagram</h2>
+    <div class="blog__slider desktop--hide"> 
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><a class="blog__item" href="/">
+              <div class="blog__item-top">
+                <h3 class="blog__item-title">Terminology Basics</h3>
+                <div class="blog__item-content content"> 
+                  <p>Lorem ipsum dolor sit amet consectetur. Nulla libero purus habitant ultricies. </p>
+                  <p>Orci morbi montes duis sed at at mi. In leo aliquam faucibus dictum sollicitudin neque. Quam enim faucibus in vel cras quam. Elit integer.</p>
+                </div>
+              </div>
+              <div class="blog__item-date">11/November/23</div>
+              <div class="blog__item-img img-wrap img-parallax">
+                <div>
+                  <picture>
+                    <source srcset="assets/images/png/blog-img.webp" type="image/webp"><img src="assets/images/png/blog-img.png" alt="">
+                  </picture>
+                </div>
+              </div>
+              <div class="blog__item-bottom">
+                <div class="blog__item-link"> 
+                  <p>read more</p>
+                  <svg viewBox="0 0 41 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M40.3536 4.35355C40.5488 4.15829 40.5488 3.84171 40.3536 3.64645L37.1716 0.464466C36.9763 0.269204 36.6597 0.269204 36.4645 0.464466C36.2692 0.659728 36.2692 0.976311 36.4645 1.17157L39.2929 4L36.4645 6.82843C36.2692 7.02369 36.2692 7.34027 36.4645 7.53553C36.6597 7.7308 36.9763 7.7308 37.1716 7.53553L40.3536 4.35355ZM0 4.5H40V3.5H0V4.5Z"></path>
+                  </svg>
+                </div>
+              </div></a></div>
+          <div class="swiper-slide"><a class="blog__item" href="/">
+              <div class="blog__item-top">
+                <h3 class="blog__item-title">Terminology Basics</h3>
+                <div class="blog__item-content content"> 
+                  <p>Lorem ipsum dolor sit amet consectetur. Nulla libero purus habitant ultricies. </p>
+                  <p>Orci morbi montes duis sed at at mi. In leo aliquam faucibus dictum sollicitudin neque. Quam enim faucibus in vel cras quam. Elit integer.</p>
+                </div>
+              </div>
+              <div class="blog__item-date">11/November/23</div>
+              <div class="blog__item-img img-wrap img-parallax">
+                <div>
+                  <picture>
+                    <source srcset="assets/images/png/blog-img2.webp" type="image/webp"><img src="assets/images/png/blog-img2.png" alt="">
+                  </picture>
+                </div>
+              </div>
+              <div class="blog__item-bottom">
+                <div class="blog__item-link"> 
+                  <p>read more</p>
+                  <svg viewBox="0 0 41 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M40.3536 4.35355C40.5488 4.15829 40.5488 3.84171 40.3536 3.64645L37.1716 0.464466C36.9763 0.269204 36.6597 0.269204 36.4645 0.464466C36.2692 0.659728 36.2692 0.976311 36.4645 1.17157L39.2929 4L36.4645 6.82843C36.2692 7.02369 36.2692 7.34027 36.4645 7.53553C36.6597 7.7308 36.9763 7.7308 37.1716 7.53553L40.3536 4.35355ZM0 4.5H40V3.5H0V4.5Z"></path>
+                  </svg>
+                </div>
+              </div></a></div>
+          <div class="swiper-slide"><a class="blog__item" href="/">
+              <div class="blog__item-top">
+                <h3 class="blog__item-title">Terminology Basics</h3>
+                <div class="blog__item-content content"> 
+                  <p>Lorem ipsum dolor sit amet consectetur. Nulla libero purus habitant ultricies. </p>
+                  <p>Orci morbi montes duis sed at at mi. In leo aliquam faucibus dictum sollicitudin neque. Quam enim faucibus in vel cras quam. Elit integer.</p>
+                </div>
+              </div>
+              <div class="blog__item-date">11/November/23</div>
+              <div class="blog__item-img img-wrap img-parallax">
+                <div>
+                  <picture>
+                    <source srcset="assets/images/png/blog-img3.webp" type="image/webp"><img src="assets/images/png/blog-img3.png" alt="">
+                  </picture>
+                </div>
+              </div>
+              <div class="blog__item-bottom">
+                <div class="blog__item-link"> 
+                  <p>read more</p>
+                  <svg viewBox="0 0 41 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M40.3536 4.35355C40.5488 4.15829 40.5488 3.84171 40.3536 3.64645L37.1716 0.464466C36.9763 0.269204 36.6597 0.269204 36.4645 0.464466C36.2692 0.659728 36.2692 0.976311 36.4645 1.17157L39.2929 4L36.4645 6.82843C36.2692 7.02369 36.2692 7.34027 36.4645 7.53553C36.6597 7.7308 36.9763 7.7308 37.1716 7.53553L40.3536 4.35355ZM0 4.5H40V3.5H0V4.5Z"></path>
+                  </svg>
+                </div>
+              </div></a></div>
+          <div class="swiper-slide"><a class="blog__item" href="/">
+              <div class="blog__item-top">
+                <h3 class="blog__item-title">Terminology Basics</h3>
+                <div class="blog__item-content content"> 
+                  <p>Lorem ipsum dolor sit amet consectetur. Nulla libero purus habitant ultricies. </p>
+                  <p>Orci morbi montes duis sed at at mi. In leo aliquam faucibus dictum sollicitudin neque. Quam enim faucibus in vel cras quam. Elit integer.</p>
+                </div>
+              </div>
+              <div class="blog__item-date">11/November/23</div>
+              <div class="blog__item-img img-wrap img-parallax">
+                <div>
+                  <picture>
+                    <source srcset="assets/images/png/blog-img4.webp" type="image/webp"><img src="assets/images/png/blog-img4.png" alt="">
+                  </picture>
+                </div>
+              </div>
+              <div class="blog__item-bottom">
+                <div class="blog__item-link"> 
+                  <p>read more</p>
+                  <svg viewBox="0 0 41 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M40.3536 4.35355C40.5488 4.15829 40.5488 3.84171 40.3536 3.64645L37.1716 0.464466C36.9763 0.269204 36.6597 0.269204 36.4645 0.464466C36.2692 0.659728 36.2692 0.976311 36.4645 1.17157L39.2929 4L36.4645 6.82843C36.2692 7.02369 36.2692 7.34027 36.4645 7.53553C36.6597 7.7308 36.9763 7.7308 37.1716 7.53553L40.3536 4.35355ZM0 4.5H40V3.5H0V4.5Z"></path>
+                  </svg>
+                </div>
+              </div></a></div>
+        </div>
+      </div>
+    </div>
+    <div class="blog__list mobile--hide">
+      <div class="blog__item">
+        <div class="blog__item-top">
+          <h3 class="blog__item-title">Terminology Basics</h3>
+          <div class="blog__item-content content"> 
+            <p>Lorem ipsum dolor sit amet consectetur. Nulla libero purus habitant ultricies. </p>
+            <p>Orci morbi montes duis sed at at mi. In leo aliquam faucibus dictum sollicitudin neque. Quam enim faucibus in vel cras quam. Elit integer.</p>
+          </div>
+        </div>
+        <div class="blog__item-img img-wrap img-parallax">
+          <div>
+            <picture>
+              <source srcset="assets/images/png/blog-img.webp" type="image/webp"><img src="assets/images/png/blog-img.png" alt="">
+            </picture>
+          </div>
+        </div>
+        <div class="blog__item-bottom"><a class="blog__item-link" href="/"> 
+            <p>read more</p>
+            <svg viewBox="0 0 41 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M40.3536 4.35355C40.5488 4.15829 40.5488 3.84171 40.3536 3.64645L37.1716 0.464466C36.9763 0.269204 36.6597 0.269204 36.4645 0.464466C36.2692 0.659728 36.2692 0.976311 36.4645 1.17157L39.2929 4L36.4645 6.82843C36.2692 7.02369 36.2692 7.34027 36.4645 7.53553C36.6597 7.7308 36.9763 7.7308 37.1716 7.53553L40.3536 4.35355ZM0 4.5H40V3.5H0V4.5Z"></path>
+            </svg></a></div>
+      </div>
+      <div class="blog__item">
+        <div class="blog__item-top">
+          <h3 class="blog__item-title">Terminology Basics</h3>
+          <div class="blog__item-content content"> 
+            <p>Lorem ipsum dolor sit amet consectetur. Ultricies gravida magna diam euismod placerat nec purus faucibus. Ullamcorper quis sit aliquam facilisis. Amet sed aenean velit gravida. Egestas eu morbi tincidunt morbi nullam volutpat amet.Ut quis amet phasellus porta sagittis feugiat</p>
+          </div>
+        </div>
+        <div class="blog__item-img img-wrap img-parallax">
+          <div>
+            <picture>
+              <source srcset="assets/images/png/blog-img.webp" type="image/webp"><img src="assets/images/png/blog-img.png" alt="">
+            </picture>
+          </div>
+        </div>
+        <div class="blog__item-bottom"><a class="blog__item-link" href="/"> 
+            <p>read more</p>
+            <svg viewBox="0 0 41 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M40.3536 4.35355C40.5488 4.15829 40.5488 3.84171 40.3536 3.64645L37.1716 0.464466C36.9763 0.269204 36.6597 0.269204 36.4645 0.464466C36.2692 0.659728 36.2692 0.976311 36.4645 1.17157L39.2929 4L36.4645 6.82843C36.2692 7.02369 36.2692 7.34027 36.4645 7.53553C36.6597 7.7308 36.9763 7.7308 37.1716 7.53553L40.3536 4.35355ZM0 4.5H40V3.5H0V4.5Z"></path>
+            </svg></a></div>
+      </div>
+      <div class="blog__item">
+        <div class="blog__item-top">
+          <h3 class="blog__item-title">Terminology Basics</h3>
+          <div class="blog__item-content content"> 
+            <p>Vivamus nam purus id nunc eget justo sapien a pellentesque. Neque morbi vulputate proin consequat ipsum pharetra nibh urna ullamcorper.Dui habitasse porta tincidunt tempor purus adipiscing semper. Mauris amet tempor dui mauris. Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
+        <div class="blog__item-img img-wrap img-parallax">
+          <div>
+            <picture>
+              <source srcset="assets/images/png/blog-img.webp" type="image/webp"><img src="assets/images/png/blog-img.png" alt="">
+            </picture>
+          </div>
+        </div>
+        <div class="blog__item-bottom"><a class="blog__item-link" href="/"> 
+            <p>read more</p>
+            <svg viewBox="0 0 41 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M40.3536 4.35355C40.5488 4.15829 40.5488 3.84171 40.3536 3.64645L37.1716 0.464466C36.9763 0.269204 36.6597 0.269204 36.4645 0.464466C36.2692 0.659728 36.2692 0.976311 36.4645 1.17157L39.2929 4L36.4645 6.82843C36.2692 7.02369 36.2692 7.34027 36.4645 7.53553C36.6597 7.7308 36.9763 7.7308 37.1716 7.53553L40.3536 4.35355ZM0 4.5H40V3.5H0V4.5Z"></path>
+            </svg></a></div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="youtube">
+  <div class="center-wrap"> 
+    <h2 class="youtube__simple-title simple-title">YouTube</h2>
+    <div class="youtube__wrap"> 
+      <div class="youtube__wrap-left">
+        <div class="content"> 
+          <h3>Get more information</h3>
+          <p>Lorem ipsum dolor sit amet consectetur. Augue risus velit pharetra nunc urna molestie ut risus. Feugiat hac consectetur mi morbi faucibus dictum sapien et. Viverra tincidunt sagittis enim amet purus nunc habitant pretium.</p>
+          <p>Nibh eget placerat u mattis. Cursus sit at a aliquam posuere. Dictumst molestie tellus gravida nec cursus.s</p>
+        </div><a class="youtube__wrap-link" href="https://www.youtube.com/embed/YRTrS7CJ3uM" target="_blank">link</a>
+      </div>
+      <div class="youtube__wrap-right">
+        <div class="img-wrap img-parallax">
+          <div>
+            <picture>
+              <source srcset="assets/images/png/blog-img.webp" type="image/webp"><img src="assets/images/png/blog-img.png" alt="">
+            </picture>
+          </div><a class="video fancybox" data-fancybox-type="iframe" href="https://www.youtube.com/embed/YRTrS7CJ3uM">
+            <div class="video__play">
+              <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20.0007 36.6666C29.2054 36.6666 36.6673 29.2047 36.6673 19.9999C36.6673 10.7952 29.2054 3.33325 20.0007 3.33325C10.7959 3.33325 3.33398 10.7952 3.33398 19.9999C3.33398 29.2047 10.7959 36.6666 20.0007 36.6666Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M16.666 13.3333L26.666 19.9999L16.666 26.6666V13.3333Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </div></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="free">
+  <div class="center-wrap"> 
+    <div class="free__wrap">
+      <div class="free__info">
+        <div class="free__title">Try the demo version for FREE!</div>
+        <div class="free__content content"> 
+          <p>It is 100% cloud based – so you have no hardware to buy, no installations, and no setup headaches.</p>
+          <p class="desktop--hide">It is 100% cloud based – so you have no hardware to buy, no installations, and no setup headaches.</p>
+        </div>
+      </div>
+      <div class="free__btn btn btn--orange"> 
+        <div class="btn__title">Get started</div>
+      </div>
+    </div>
+  </div>
+</div>
+<section class="request">
+  <div class="center-wrap"> 
+    <div class="request__wrap"> 
+      <div class="request__left">
+        <h2 class="request__title simple-title">Request A Demo</h2>
+        <div class="request__content content"> 
+          <p>Request your no-obligation personalized demo with our product experts.</p>
+        </div>
+        <form class="inputs" action="/action_page.php" autocomplete="off">
+          <div class="inputs__field-row">
+            <div class="inputs__field-wrap">
+              <label class="inputs__label" for="text1">Company name:</label>
+              <input class="inputs__field" type="text" id="text1" name="text" autocomplete="off" required="" minlength="2">
+            </div>
+            <div class="inputs__field-wrap">
+              <label class="inputs__label" for="text2">Fleet size:</label>
+              <input class="inputs__field" type="text2" id="text2" name="text" autocomplete="off" minlength="2">
+            </div>
+          </div>
+          <div class="inputs__field-row">
+            <div class="inputs__field-wrap">
+              <label class="inputs__label" for="email">Email:</label>
+              <input class="inputs__field" type="email" id="email" placeholder="atlassys@gmail.com" name="email" autocomplete="off" required="">
+            </div>
+            <div class="inputs__field-wrap">
+              <label class="inputs__label" for="phone">Phone number:</label>
+              <input class="inputs__field" type="tel" placeholder="+1- 000 - 00 - 00 - 000" id="phone" name="tel" autocomplete="off" required="">
+            </div>
+          </div>
+          <div class="inputs__btn">
+            <button class="btn btn--orange" type="submit"><span class="btn__title">Send</span></button>
+          </div>
+        </form>
+      </div>
+      <div class="request__right">
+        <div class="img-wrap">
+          <div>
+            <picture>
+              <source srcset="assets/images/png/request-img.webp" type="image/webp"><img src="assets/images/png/request-img.png" alt="">
+            </picture>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+          <section class="questions questions--padd">
+            <div class="center-wrap"> 
+              <h2 class="questions__simple-title simple-title">Popular questions in blog</h2>
+              <div class="questions__content content">
+                <p>Our IT services converge business and technology experts to help to manage business processes of all categories including purchasing, deployment, and maintenance. </p>
+                <p>Grow your business efficiently.</p>
+              </div>
+              <div class="questions__wrap">
+                <div class="questions__tab toogles">
+                  <div class="questions__tab-item">
+                    <div class="questions__tab-title toogles__item-title toogles__item-title--active" data-toogles="1">
+                      <h3>Is Atlassys TMS сloud-based?</h3>
+                    </div>
+                    <div class="questions__tab-body toogles__item toogles__item--active" data-toogles="1">
+                      <div class="toogles__item-content" style="display: block;">
+                        <div>
+                          <div class="questions__tab-content content">
+                            <p>Our IT services converge business and technology experts to help to manage business processes of all categories including...</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="questions__tab-item">
+                    <div class="questions__tab-title toogles__item-title" data-toogles="2">
+                      <h3>Can you import data from other TMS?</h3>
+                    </div>
+                    <div class="questions__tab-body toogles__item" data-toogles="2">
+                      <div class="toogles__item-content">
+                        <div>
+                          <div class="questions__tab-content content">
+                            <p>It will help companies to minimize human errors, reduce costs by optimizing all operations, to improve customer service.</p>
+                            <p>It will help companies to minimize human errors, reduce costs by optimizing all operations, to improve customer service.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="questions__tab-item">
+                    <div class="questions__tab-title toogles__item-title" data-toogles="3">
+                      <h3>Do you have integration with Samsara?</h3>
+                    </div>
+                    <div class="questions__tab-body toogles__item" data-toogles="3">
+                      <div class="toogles__item-content">
+                        <div>
+                          <div class="questions__tab-content content">
+                            <p>It will help companies to minimize human errors, reduce costs by optimizing all operations, to improve customer service.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="questions__form">
+                  <form class="inputs" action="/action_page.php" autocomplete="off">
+                    <div class="simple-title questions__form-title desktop--hide">Send your own question</div>
+                    <div class="inputs__field-wrap inputs__field-wrap--textarea">
+                      <textarea class="inputs__field" name="textarea" required placeholder="Still have questions? Add your own question in this field."></textarea>
+                    </div>
+                    <div class="inputs__field-bottom">
+                      <div class="inputs__field-wrap">
+                        <input class="inputs__field" type="email" placeholder="Enter your email" name="email" autocomplete="off" required>
+                      </div>
+                      <div class="inputs__btn">
+                        <button class="btn btn--orange" type="submit"><span class="btn__title">Send question!</span></button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </section>
+        </main>
+<footer class="footer">
+  <div class="center-wrap">
+    <div class="footer__wrap">
+      <div class="footer__left"><a class="footer__logo single-anchors img-wrap" href="/home.html#home" aria-label="Logo site">
+          <div><img src="assets/images/svg/logo-white.svg" alt=""></div></a>
+        <div class="footer__content content"> 
+          <p>Companies that are committed to growing their business, while keeping up with today’s requirements, choose Atlassys TMS.</p>
+        </div>
+        <div class="footer__img img-wrap mobile--hide">
+          <div>
+            <picture>
+              <source srcset="assets/images/png/footer-img.webp" type="image/webp"><img src="assets/images/png/footer-img.png" alt="">
+            </picture>
+          </div>
+        </div>
+      </div>
+      <div class="footer__right">
+        <div class="footer__right-wrap">
+          <div class="footer__column">
+            <div class="footer__column-title">Solutions:</div>
+            <ul class="footer__column-list">
+              <li class="footer__column-item"> <a class="footer__column-link" href="/">Dispatch Board</a></li>
+              <li class="footer__column-item"> <a class="footer__column-link" href="/">Fleet Management</a></li>
+              <li class="footer__column-item"> <a class="footer__column-link" href="/">Driver`s App</a></li>
+              <li class="footer__column-item"> <a class="footer__column-link" href="/">Payroll & Accounti</a></li>
+              <li class="footer__column-item"> <a class="footer__column-link" href="/">HR</a></li>
+              <li class="footer__column-item"> <a class="footer__column-link" href="/">Trip Calculator</a></li>
+            </ul>
+          </div>
+          <div class="footer__column">
+            <div class="footer__column-title">Our contacts:</div>
+            <ul class="footer__column-list">
+              <li class="footer__column-item">
+                <p>Phone:</p><a class="footer__column-link" href="tel:(470) 977-3456" target="_blank">(470) 977-3456</a>
+              </li>
+              <li class="footer__column-item"> 
+                <p>Email:</p><a class="footer__column-link" href="mailto:info@atlassys-tms.com" target="_blank"> info@atlassys-tms.com</a>
+              </li>
+              <li class="footer__column-item footer__column-item--address">
+                <p class="desktop--hide">Office Address: </p><a class="footer__column-link footer__column-link--before" href="/" target="_blank">Office Address: 11340 Lakefield, Dr Suite 200, Johns Creek, GA</a>
+              </li>
+              <li class="footer__column-item footer__column-item--code">
+                <p>30097</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__column-bottom">
+          <div class="footer__rating mobile--hide">
+            <div class="footer__rating-value">4.8</div>
+            <div class="footer__rating-right">
+              <div class="star-rating">
+                <input id="5-starsd" type="radio" name="1ratingd" value="15">
+                <label class="star" for="5-starsd">★</label>
+                <input id="4-starsd" type="radio" name="1ratingd" value="14" checked="checked">
+                <label class="star" for="4-starsd">★</label>
+                <input id="3-starsd" type="radio" name="1ratingd" value="13">
+                <label class="star" for="3-starsd">★</label>
+                <input id="2-starsd" type="radio" name="1ratingd" value="12">
+                <label class="star" for="2-starsd">★</label>
+                <input id="1-starsd" type="radio" name="1ratingd" value="11">
+                <label class="star" for="1-starsd">★</label>
+              </div>
+              <div class="footer__rating-info">based on: <span>441</span></div>
+            </div>
+          </div>
+          <div class="footer__socials"> 
+            <div class="socials"><a class="socials__link img-wrap" href="/" target="_blank" aria-label="Socials link">
+                <div>
+                  <picture>
+                    <source srcset="assets/images/png/inst.webp" type="image/webp"><img src="assets/images/png/inst.png" alt="">
+                  </picture>
+                </div></a><a class="socials__link img-wrap" href="/" target="_blank" aria-label="Socials link">
+                <div>
+                  <picture>
+                    <source srcset="assets/images/png/fac.webp" type="image/webp"><img src="assets/images/png/fac.png" alt="">
+                  </picture>
+                </div></a><a class="socials__link img-wrap" href="/" target="_blank" aria-label="Socials link">
+                <div>
+                  <picture>
+                    <source srcset="assets/images/png/link.webp" type="image/webp"><img src="assets/images/png/link.png" alt="">
+                  </picture>
+                </div></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+      </div>
+    </div>
+<div class="mobile-menu">
+  <div class="mobile-menu__wrap">
+    <nav class="mobile-menu__nav">
+      <ul class="mobile-menu__nav-list">
+        <li class="mobile-menu__nav-item"><a class="mobile-menu__nav-link" href="/">Cloud platform</a></li>
+        <li class="mobile-menu__nav-item mobile-menu__nav-item--drop">
+          <div class="mobile-menu__nav-link"> <a href="">Solutions</a>
+            <div class="mobile-menu__nav-arrow"><svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8 12L16 20L24 12" stroke="#89B4E0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+            </div>
+          </div>
+          <div class="mobile-menu__drop">
+            <ul class="mobile-menu__drop-list overflow-bl">
+              <li class="mobile-menu__drop-item"> <a class="mobile-menu__drop-link" href="/">Dispatch Board </a></li>
+              <li class="mobile-menu__drop-item"> <a class="mobile-menu__drop-link" href="/">Fleet Management</a></li>
+              <li class="mobile-menu__drop-item"> <a class="mobile-menu__drop-link" href="/">Trip Calculator</a></li>
+              <li class="mobile-menu__drop-item"> <a class="mobile-menu__drop-link" href="/">Driver`s App</a></li>
+              <li class="mobile-menu__drop-item"> <a class="mobile-menu__drop-link" href="/">Real-time tracking</a></li>
+              <li class="mobile-menu__drop-item"> <a class="mobile-menu__drop-link" href="/">Payroll & Accounting</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="mobile-menu__nav-item mobile-menu__nav-item--drop">
+          <div class="mobile-menu__nav-link"> <a href="">Industries</a>
+            <div class="mobile-menu__nav-arrow"><svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8 12L16 20L24 12" stroke="#89B4E0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+            </div>
+          </div>
+          <div class="mobile-menu__drop">
+            <ul class="mobile-menu__drop-list overflow-bl">
+              <li class="mobile-menu__drop-item"> <a class="mobile-menu__drop-link" href="/">Logistics Service </a></li>
+              <li class="mobile-menu__drop-item"> <a class="mobile-menu__drop-link" href="/">Wholesale</a></li>
+              <li class="mobile-menu__drop-item"> <a class="mobile-menu__drop-link" href="/">Manufacturing</a></li>
+              <li class="mobile-menu__drop-item"> <a class="mobile-menu__drop-link" href="/">Retail</a></li>
+              <li class="mobile-menu__drop-item"> <a class="mobile-menu__drop-link" href="/">Haigh-Tech</a></li>
+              <li class="mobile-menu__drop-item"> <a class="mobile-menu__drop-link" href="/">Pharma</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="mobile-menu__nav-item"><a class="mobile-menu__nav-link" href="/pricing.html">Pricing</a></li>
+        <li class="mobile-menu__nav-item"><a class="mobile-menu__nav-link" href="/about.html">About</a></li>
+        <li class="mobile-menu__nav-item"><a class="mobile-menu__nav-link" href="/blog.html">Blog</a></li>
+        <li class="mobile-menu__nav-item"><a class="mobile-menu__nav-link" href="/contacts.html">Contacts</a></li>
+      </ul>
+    </nav>
+  </div>
+</div>
+<div class="popup-wrap" id="thank-you">
+  <div class="popup">
+    <div class="popup__close" onclick="close_popup('thank-you')">
+      <div></div>
+      <div></div>
+    </div>
+    <div class="popup__inner">
+      <div class="popup__simple-title simple-title">Спасибо!</div>
+      <div class="popup__content content"> 
+        <p>Ваша заявка успешно отправлена.</p>
+      </div>
+    </div>
+  </div>
+</div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+  <script src="js/app.js?v=1678977488836"></script></body>
+</html>

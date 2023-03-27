@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="description" content="Text">
+    <title>Article</title>
+    <meta name="theme-color" content="#3D4356">
+    <link rel="icon" type="image/png" href="assets/images/png/favicon.png"><link rel="preload" href="assets/fonts/Roboto-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+<link rel="preload" href="assets/fonts/Roboto-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="apple-touch-icon" href="assets/images/png/favicon.png">
+    <link rel="preload" as="image" href="assets/images/svg/logo.svg"><link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.min.css" as="style" onload="this.rel='stylesheet'">
+<noscript><link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.min.css" rel="stylesheet"></noscript>
+  <link href="assets/css/app.css?v=1678977490589" rel="stylesheet"></head>
+  <body>
+<div class="preloader">
+  <div class="preloader-logo img-wrap"> 
+    <div><img src="assets/images/svg/logo.svg" alt=""></div>
+  </div>
+</div>
+<script>
+  let preloader = document.querySelector('.preloader');
+  if (!(document.referrer.indexOf('atlassys') == -1) || !(location.href.indexOf('localhost') == -1)) {
+  	preloader.remove();
+  }
+  
+  
+  setTimeout(function () {
+  	if (preloader) {
+  		setTimeout(function () {
+  			preloader.classList.add('preloader--hide');
+  		}, 2000);
+  
+  		setTimeout(function () {
+  			preloader.style.display = 'none';
+  		}, 3500);
+  	}
+  }, 500);
+</script>
+    <div class="body__wrap">
+<header class="header">
+  <div class="center-wrap">
+    <div class="header__wrap"><a class="header__logo single-anchors img-wrap" href="/home.html#home" aria-label="Logo site">
+        <div><img src="assets/images/svg/logo.svg" alt=""></div></a>
+      <nav class="header__nav mobile--hide">
+        <ul class="header__nav-list">
+          <li class="header__nav-item"><a class="header__nav-link" href="/">Cloud platform</a></li>
+          <li class="header__nav-item header__nav-item--drop"><a class="header__nav-link" href="/">Solutions</a>
+            <div class="header__drop">
+              <ul class="header__drop-list overflow-bl">
+                <li class="header__drop-item"> <a class="header__drop-link" href="/">Dispatch Board </a></li>
+                <li class="header__drop-item"> <a class="header__drop-link" href="/">Fleet Management</a></li>
+                <li class="header__drop-item"> <a class="header__drop-link" href="/">Trip Calculator</a></li>
+                <li class="header__drop-item"> <a class="header__drop-link" href="/">Driver`s App</a></li>
+                <li class="header__drop-item"> <a class="header__drop-link" href="/">Real-time tracking</a></li>
+                <li class="header__drop-item"> <a class="header__drop-link" href="/">Payroll & Accounting</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="header__nav-item header__nav-item--drop"><a class="header__nav-link" href="/">Industries</a>
+            <div class="header__drop">
+              <ul class="header__drop-list overflow-bl">
+                <li class="header__drop-item"> <a class="header__drop-link" href="/">Logistics Service</a></li>
+                <li class="header__drop-item"> <a class="header__drop-link" href="/">Wholesale</a></li>
+                <li class="header__drop-item"> <a class="header__drop-link" href="/">Manufacturing</a></li>
+                <li class="header__drop-item"> <a class="header__drop-link" href="/">Retail</a></li>
+                <li class="header__drop-item"> <a class="header__drop-link" href="/">haigh-Tech</a></li>
+                <li class="header__drop-item"> <a class="header__drop-link" href="/">Pharma</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="header__nav-item"><a class="header__nav-link" href="/pricing.html">Pricing</a></li>
+          <li class="header__nav-item"><a class="header__nav-link" href="/about.html">About</a></li>
+          <li class="header__nav-item"><a class="header__nav-link" href="/blog.html">Blog</a></li>
+          <li class="header__nav-item"><a class="header__nav-link" href="/contacts.html">Contacts</a></li>
+        </ul>
+      </nav>
+      <div class="header__btn btn mobile--hide"> 
+        <div class="btn__title">Free consultant </div>
+      </div>
+      <div class="header__burger desktop--hide">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+  </div>
+</header>
+      <div id="scrollbar">
+        <main class="pt">
+          <div class="breadcrumb">
+            <div class="center-wrap">
+              <ul class="breadcrumb__list">
+                <li class="breadcrumb__item"><a class="breadcrumb__link" href="/">Atlassys TMS</a></li>
+                <li class="breadcrumb__item"><a class="breadcrumb__link" href="/blog.html">blog</a></li>
+                <li class="breadcrumb__item"><a class="breadcrumb__link" href="/blog.html">Назва новини</a></li>
+              </ul>
+            </div>
+          </div>
+          <section class="article">
+            <div class="center-wrap">
+              <div class="article__simple-title"> 
+                <h1>Terminology Basics</h1>
+              </div>
+            </div>
+            <section class="about-bl" id="down">
+              <div class="center-wrap content read-more">
+                <div class="about-bl__wrap">
+                  <h2>About us</h2>
+                  <p>Atlassys TMS is a comprehensive software for any trucking company at an affordable price. Atlassys Software allows you to conveniently run your business in today’s busy world. Our solutions will meet or even exceed your requirements.</p>
+                  <div class="read-more__text">
+                    <h2>Reasons to choose </h2>
+                    <p>Reasons to choose Atlassys TMS today:</p>
+                    <ul> 
+                      <li>Connect to numerous public load posting boards;</li>
+                      <li>Easily track loads and drivers;</li>
+                      <li>Save money on fuel, labor, and other expenses;</li>
+                      <li>Conveniently communicate via text messages with your drivers;</li>
+                      <li>Find advances and funding through several financial institutions;</li>
+                      <li>Collect the analytics you need for decision-making in one place and with one click;</li>
+                    </ul>
+                    <p>We committed the time and resources needed for Research & Development with 100+ trucking industry experts, resulting in a TMS software platform that efficiently solves all their problems.</p>
+                    <h2>By leveraging Atlassys Software everything is transparent </h2>
+                    <p>Trucking companies that aim to grow and keep up with logistic requirements choose us.</p>
+                    <ol>
+                      <li>Our best practices</li>
+                      <li><a href="/">New tools</a></li>
+                      <li>Optimization of existing business processes</li>
+                    </ol>
+                    <h3>Try now!</h3>
+                    <p>Take the first step toward a better future today! Atlassys TMS is ready to help your company be the best</p>
+                  </div>
+                </div>
+                <div class="read-more__button">more</div>
+              </div>
+            </section>
+            <div class="center-wrap">
+              <div class="article__wrap"> 
+                <div class="article__wrap-box">
+                  <div class="article__wrap-img img-wrap img-parallax">
+                    <div>
+                      <picture>
+                        <source srcset="assets/images/png/article__wrap-img.webp" type="image/webp"><img src="assets/images/png/article__wrap-img.png" alt="">
+                      </picture>
+                    </div>
+                  </div>
+                  <div class="content"> 
+                    <p>Lorem ipsum dolor sit amet consectetur. Amet pulvinar hendrerit nisi integer tempor amet elementum at vitae. Ullamcorper arcu mi eget in aliquam tellus sed. Et ullamcorper felis quis in scelerisque ultrices auctor elementum. Facilisi massa nulla lorem sed tortor porttitor platea pretium hac. </p>
+                    <q>Mattis ac tellus consequat massa. Rutrum tempus nunc consectetur commodo orci est sed</q>
+                    <p>Malesuada eros auctor tincidunt lectus feugiat lacus sit in. Mauris magna elementum lobortis est eget in.</p>
+                    <p>Duis vitae massa diam leo ac arcu nam id amet. Vestibulum quis etiam amet sit magnis proin. Pulvinar cras tempor pharetra et. In nunc turpis cursus neque vitae at. Non sed nunc mattis maecenas cras nisl tincidunt sit. Vitae odio rhoncus vitae aliquam eget vestibulum dolor ultricies. Tellus consequat mi mauris ultrices quis feugiat aliquam egestas. Pharetra aliquam amet donec amet ante pharetra elementum laoreet faucibus. Neque enim urna urna adipiscing consequat velit odio. Odio fusce vulputate sit fringilla porta adipiscing tortor cras fusce. </p>
+                  </div>
+                </div>
+                <div class="article__wrap-box mobile--hide">
+                  <div class="article__grid">
+                    <div class="article__grid-item img-wrap img-parallax">
+                      <div>
+                        <picture>
+                          <source srcset="assets/images/png/article__grid.webp" type="image/webp"><img src="assets/images/png/article__grid.png" alt="">
+                        </picture>
+                      </div>
+                    </div>
+                    <div class="article__grid-item img-wrap img-parallax">
+                      <div>
+                        <picture>
+                          <source srcset="assets/images/png/article__grid.webp" type="image/webp"><img src="assets/images/png/article__grid.png" alt="">
+                        </picture>
+                      </div>
+                    </div>
+                    <div class="article__grid-item img-wrap img-parallax">
+                      <div>
+                        <picture>
+                          <source srcset="assets/images/png/article__grid.webp" type="image/webp"><img src="assets/images/png/article__grid.png" alt="">
+                        </picture>
+                      </div>
+                    </div>
+                    <div class="article__grid-item img-wrap img-parallax">
+                      <div>
+                        <picture>
+                          <source srcset="assets/images/png/article__grid.webp" type="image/webp"><img src="assets/images/png/article__grid.png" alt="">
+                        </picture>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="content"> 
+                    <p>Pulvinar cras tempor pharetra et. In nunc turpis cursus neque vitae at.Pulvinar cras tempor pharetra et. In nunc turpis cursus neque vitae at. Non sed nunc mattis maecenas cras nisl tincidunt sit. Vitae odio rhoncus vitae aliquam eget vestibulum dolor ultricies. Tellus consequat mi mauris ultrices quis feugiat aliquam egestas. Pharetra aliquam amet donec amet ante pharetra elementum laoreet faucibus. Neque enim urna urna adipiscing consequat velit odio. Odio fusce vulputate sit fringilla porta adipiscing tortor cras fusce. </p>
+                    <p>Tellus consequat mi mauris ultrices quis feugiat aliquam egestas. Pharetra aliquam amet donec amet ante pharetra elementum laoreet faucibus. Neque enim urna urna adipiscing consequat velit odio. </p>
+                  </div>
+                </div>
+              </div>
+              <div class="article__date"> 
+                <p>11/November/23</p>
+              </div>
+            </div>
+          </section>
+<section class="more-articles">
+  <div class="center-wrap">
+    <h2 class="more-articles__simple-title simple-title mobile--hide">More articles</h2>
+    <div class="blog__slider desktop--hide"> 
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><a class="blog__item" href="/">
+              <div class="blog__item-top">
+                <h3 class="blog__item-title">Terminology Basics</h3>
+                <div class="blog__item-content content"> 
+                  <p>Lorem ipsum dolor sit amet consectetur. Nulla libero purus habitant ultricies. </p>
+                  <p>Orci morbi montes duis sed at at mi. In leo aliquam faucibus dictum sollicitudin neque. Quam enim faucibus in vel cras quam. Elit integer.</p>
+                </div>
+              </div>
+              <div class="blog__item-date">11/November/23</div>
+              <div class="blog__item-img img-wrap img-parallax">
+                <div>
+                  <picture>
+                    <source srcset="assets/images/png/blog-img.webp" type="image/webp"><img src="assets/images/png/blog-img.png" alt="">
+                  </picture>
+                </div>
+              </div>
+              <div class="blog__item-bottom">
+                <div class="blog__item-link"> 
+                  <p>read more</p>
+                  <svg viewBox="0 0 41 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M40.3536 4.35355C40.5488 4.15829 40.5488 3.84171 40.3536 3.64645L37.1716 0.464466C36.9763 0.269204 36.6597 0.269204 36.4645 0.464466C36.2692 0.659728 36.2692 0.976311 36.4645 1.17157L39.2929 4L36.4645 6.82843C36.2692 7.02369 36.2692 7.34027 36.4645 7.53553C36.6597 7.7308 36.9763 7.7308 37.1716 7.53553L40.3536 4.35355ZM0 4.5H40V3.5H0V4.5Z"></path>
+                  </svg>
+                </div>
+              </div></a></div>
+          <div class="swiper-slide"><a class="blog__item" href="/">
+              <div class="blog__item-top">
+                <h3 class="blog__item-title">Terminology Basics</h3>
+                <div class="blog__item-content content"> 
+                  <p>Lorem ipsum dolor sit amet consectetur. Nulla libero purus habitant ultricies. </p>
+                  <p>Orci morbi montes duis sed at at mi. In leo aliquam faucibus dictum sollicitudin neque. Quam enim faucibus in vel cras quam. Elit integer.</p>
+                </div>
+              </div>
+              <div class="blog__item-date">11/November/23</div>
+              <div class="blog__item-img img-wrap img-parallax">
+                <div>
+                  <picture>
+                    <source srcset="assets/images/png/blog-img2.webp" type="image/webp"><img src="assets/images/png/blog-img2.png" alt="">
+                  </picture>
+                </div>
+              </div>
+              <div class="blog__item-bottom">
+                <div class="blog__item-link"> 
+                  <p>read more</p>
+                  <svg viewBox="0 0 41 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M40.3536 4.35355C40.5488 4.15829 40.5488 3.84171 40.3536 3.64645L37.1716 0.464466C36.9763 0.269204 36.6597 0.269204 36.4645 0.464466C36.2692 0.659728 36.2692 0.976311 36.4645 1.17157L39.2929 4L36.4645 6.82843C36.2692 7.02369 36.2692 7.34027 36.4645 7.53553C36.6597 7.7308 36.9763 7.7308 37.1716 7.53553L40.3536 4.35355ZM0 4.5H40V3.5H0V4.5Z"></path>
+                  </svg>
+                </div>
+              </div></a></div>
+          <div class="swiper-slide"><a class="blog__item" href="/">
+              <div class="blog__item-top">
+                <h3 class="blog__item-title">Terminology Basics</h3>
+                <div class="blog__item-content content"> 
+                  <p>Lorem ipsum dolor sit amet consectetur. Nulla libero purus habitant ultricies. </p>
+                  <p>Orci morbi montes duis sed at at mi. In leo aliquam faucibus dictum sollicitudin neque. Quam enim faucibus in vel cras quam. Elit integer.</p>
+                </div>
+              </div>
+              <div class="blog__item-date">11/November/23</div>
+              <div class="blog__item-img img-wrap img-parallax">
+                <div>
+                  <picture>
+                    <source srcset="assets/images/png/blog-img3.webp" type="image/webp"><img src="assets/images/png/blog-img3.png" alt="">
+                  </picture>
+                </div>
+              </div>
+              <div class="blog__item-bottom">
+                <div class="blog__item-link"> 
+                  <p>read more</p>
+                  <svg viewBox="0 0 41 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M40.3536 4.35355C40.5488 4.15829 40.5488 3.84171 40.3536 3.64645L37.1716 0.464466C36.9763 0.269204 36.6597 0.269204 36.4645 0.464466C36.2692 0.659728 36.2692 0.976311 36.4645 1.17157L39.2929 4L36.4645 6.82843C36.2692 7.02369 36.2692 7.34027 36.4645 7.53553C36.6597 7.7308 36.9763 7.7308 37.1716 7.53553L40.3536 4.35355ZM0 4.5H40V3.5H0V4.5Z"></path>
+                  </svg>
+                </div>
+              </div></a></div>
+          <div class="swiper-slide"><a class="blog__item" href="/">
+              <div class="blog__item-top">
+                <h3 class="blog__item-title">Terminology Basics</h3>
+                <div class="blog__item-content content"> 
+                  <p>Lorem ipsum dolor sit amet consectetur. Nulla libero purus habitant ultricies. </p>
+                  <p>Orci morbi montes duis sed at at mi. In leo aliquam faucibus dictum sollicitudin neque. Quam enim faucibus in vel cras quam. Elit integer.</p>
+                </div>
+              </div>
+              <div class="blog__item-date">11/November/23</div>
+              <div class="blog__item-img img-wrap img-parallax">
+                <div>
+                  <picture>
+                    <source srcset="assets/images/png/blog-img4.webp" type="image/webp"><img src="assets/images/png/blog-img4.png" alt="">
+                  </picture>
+                </div>
+              </div>
+              <div class="blog__item-bottom">
+                <div class="blog__item-link"> 
+                  <p>read more</p>
+                  <svg viewBox="0 0 41 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M40.3536 4.35355C40.5488 4.15829 40.5488 3.84171 40.3536 3.64645L37.1716 0.464466C36.9763 0.269204 36.6597 0.269204 36.4645 0.464466C36.2692 0.659728 36.2692 0.976311 36.4645 1.17157L39.2929 4L36.4645 6.82843C36.2692 7.02369 36.2692 7.34027 36.4645 7.53553C36.6597 7.7308 36.9763 7.7308 37.1716 7.53553L40.3536 4.35355ZM0 4.5H40V3.5H0V4.5Z"></path>
+                  </svg>
+                </div>
+              </div></a></div>
+        </div>
+      </div>
+    </div>
+    <div class="blog__list mobile--hide">
+      <div class="blog__item">
+        <div class="blog__item-top">
+          <h3 class="blog__item-title">Terminology Basics</h3>
+          <div class="blog__item-content content"> 
+            <p>Auctor amet a volutpat sed tincidunt. Vestibulum nunc viverra aenean ipsum ornare tempor at at. Lorem velit laoreet morbi sodales arcu dictum. Id elementum gravida nunc quis faucibus nisi.Lorem ipsum dolor sit amet consectetur. Enim dignissim amet natoque bibendum.</p>
+          </div>
+        </div>
+        <div class="blog__item-img img-wrap img-parallax">
+          <div>
+            <picture>
+              <source srcset="assets/images/png/blog-img.webp" type="image/webp"><img src="assets/images/png/blog-img.png" alt="">
+            </picture>
+          </div>
+        </div>
+        <div class="blog__item-bottom">
+          <div class="blog__item-date">11/November/23</div>
+          <div class="blog__item-link"> 
+            <p>read more</p>
+            <svg viewBox="0 0 41 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M40.3536 4.35355C40.5488 4.15829 40.5488 3.84171 40.3536 3.64645L37.1716 0.464466C36.9763 0.269204 36.6597 0.269204 36.4645 0.464466C36.2692 0.659728 36.2692 0.976311 36.4645 1.17157L39.2929 4L36.4645 6.82843C36.2692 7.02369 36.2692 7.34027 36.4645 7.53553C36.6597 7.7308 36.9763 7.7308 37.1716 7.53553L40.3536 4.35355ZM0 4.5H40V3.5H0V4.5Z"></path>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="blog__item">
+        <div class="blog__item-top">
+          <h3 class="blog__item-title">Terminology Basics</h3>
+          <div class="blog__item-content content"> 
+            <p>Sed arcu ullamcorper sed iaculis volutpat ultricies at fermentum. Vulputate euismod sit cursus velit pretium cursus pharetra viverra. Nunc nam condimentum donec urna feugiat fames fermentum.Amet at donec pellentesque habitasse ut sit platea feugiat.</p>
+          </div>
+        </div>
+        <div class="blog__item-img img-wrap img-parallax">
+          <div>
+            <picture>
+              <source srcset="assets/images/png/blog-img.webp" type="image/webp"><img src="assets/images/png/blog-img.png" alt="">
+            </picture>
+          </div>
+        </div>
+        <div class="blog__item-bottom">
+          <div class="blog__item-date">11/November/23</div>
+          <div class="blog__item-link"> 
+            <p>read more</p>
+            <svg viewBox="0 0 41 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M40.3536 4.35355C40.5488 4.15829 40.5488 3.84171 40.3536 3.64645L37.1716 0.464466C36.9763 0.269204 36.6597 0.269204 36.4645 0.464466C36.2692 0.659728 36.2692 0.976311 36.4645 1.17157L39.2929 4L36.4645 6.82843C36.2692 7.02369 36.2692 7.34027 36.4645 7.53553C36.6597 7.7308 36.9763 7.7308 37.1716 7.53553L40.3536 4.35355ZM0 4.5H40V3.5H0V4.5Z"></path>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="blog__item blog__item--poster">
+        <div class="img-wrap img-parallax">
+          <div>
+            <picture>
+              <source srcset="assets/images/png/blog-img.webp" type="image/webp"><img src="assets/images/png/blog-img.png" alt="">
+            </picture>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="free">
+  <div class="center-wrap"> 
+    <div class="free__wrap">
+      <div class="free__info">
+        <div class="free__title">Try the demo version for FREE!</div>
+        <div class="free__content content"> 
+          <p>It is 100% cloud based – so you have no hardware to buy, no installations, and no setup headaches.</p>
+          <p class="desktop--hide">It is 100% cloud based – so you have no hardware to buy, no installations, and no setup headaches.</p>
+        </div>
+      </div>
+      <div class="free__btn btn btn--orange"> 
+        <div class="btn__title">Get started</div>
+      </div>
+    </div>
+  </div>
+</div>
+<section class="request">
+  <div class="center-wrap"> 
+    <div class="request__wrap"> 
+      <div class="request__left">
+        <h2 class="request__title simple-title">Request A Demo</h2>
+        <div class="request__content content"> 
+          <p>Request your no-obligation personalized demo with our product experts.</p>
+        </div>
+        <form class="inputs" action="/action_page.php" autocomplete="off">
+          <div class="inputs__field-row">
+            <div class="inputs__field-wrap">
+              <label class="inputs__label" for="text1">Company name:</label>
+              <input class="inputs__field" type="text" id="text1" name="text" autocomplete="off" required="" minlength="2">
+            </div>
+            <div class="inputs__field-wrap">
+              <label class="inputs__label" for="text2">Fleet size:</label>
+              <input class="inputs__field" type="text2" id="text2" name="text" autocomplete="off" minlength="2">
+            </div>
+          </div>
+          <div class="inputs__field-row">
+            <div class="inputs__field-wrap">
+              <label class="inputs__label" for="email">Email:</label>
+              <input class="inputs__field" type="email" id="email" placeholder="atlassys@gmail.com" name="email" autocomplete="off" required="">
+            </div>
+            <div class="inputs__field-wrap">
+              <label class="inputs__label" for="phone">Phone number:</label>
+              <input class="inputs__field" type="tel" placeholder="+1- 000 - 00 - 00 - 000" id="phone" name="tel" autocomplete="off" required="">
+            </div>
+          </div>
+          <div class="inputs__btn">
+            <button class="btn btn--orange" type="submit"><span class="btn__title">Send</span></button>
+          </div>
+        </form>
+      </div>
+      <div class="request__right">
+        <div class="img-wrap">
+          <div>
+            <picture>
+              <source srcset="assets/images/png/request-img.webp" type="image/webp"><img src="assets/images/png/request-img.png" alt="">
+            </picture>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+          <section class="questions">
+            <div class="center-wrap"> 
+              <h2 class="questions__simple-title simple-title">Popular questions</h2>
+              <div class="questions__content content">
+                <p>Our IT services converge business and technology experts to help to manage business processes of all categories including purchasing, deployment, and maintenance. </p>
+                <p>Grow your business efficiently.</p>
+              </div>
+              <div class="questions__wrap">
+                <div class="questions__tab toogles">
+                  <div class="questions__tab-item">
+                    <div class="questions__tab-title toogles__item-title toogles__item-title--active" data-toogles="1">
+                      <h3>Is Atlassys TMS сloud-based?</h3>
+                    </div>
+                    <div class="questions__tab-body toogles__item toogles__item--active" data-toogles="1">
+                      <div class="toogles__item-content" style="display: block;">
+                        <div>
+                          <div class="questions__tab-content content">
+                            <p>Our IT services converge business and technology experts to help to manage business processes of all categories including...</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="questions__tab-item">
+                    <div class="questions__tab-title toogles__item-title" data-toogles="2">
+                      <h3>Can you import data from other TMS?</h3>
+                    </div>
+                    <div class="questions__tab-body toogles__item" data-toogles="2">
+                      <div class="toogles__item-content">
+                        <div>
+                          <div class="questions__tab-content content">
+                            <p>It will help companies to minimize human errors, reduce costs by optimizing all operations, to improve customer service.</p>
+                            <p>It will help companies to minimize human errors, reduce costs by optimizing all operations, to improve customer service.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="questions__tab-item">
+                    <div class="questions__tab-title toogles__item-title" data-toogles="3">
+                      <h3>Do you have integration with Samsara?</h3>
+                    </div>
+                    <div class="questions__tab-body toogles__item" data-toogles="3">
+                      <div class="toogles__item-content">
+                        <div>
+                          <div class="questions__tab-content content">
+                            <p>It will help companies to minimize human errors, reduce costs by optimizing all operations, to improve customer service.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="questions__form">
+                  <form class="inputs" action="/action_page.php" autocomplete="off">
+                    <div class="simple-title questions__form-title desktop--hide">Send your own question</div>
+                    <div class="inputs__field-wrap inputs__field-wrap--textarea">
+                      <textarea class="inputs__field" name="textarea" required placeholder="Still have questions? Add your own question in this field."></textarea>
+                    </div>
+                    <div class="inputs__field-bottom">
+                      <div class="inputs__field-wrap">
+                        <input class="inputs__field" type="email" placeholder="Enter your email" name="email" autocomplete="off" required>
+                      </div>
+                      <div class="inputs__btn">
+                        <button class="btn btn--orange" type="submit"><span class="btn__title">Send question!</span></button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </section>
+        </main>
+<footer class="footer">
+  <div class="center-wrap">
+    <div class="footer__wrap">
+      <div class="footer__left"><a class="footer__logo single-anchors img-wrap" href="/home.html#home" aria-label="Logo site">
+          <div><img src="assets/images/svg/logo-white.svg" alt=""></div></a>
+        <div class="footer__content content"> 
+          <p>Companies that are committed to growing their business, while keeping up with today’s requirements, choose Atlassys TMS.</p>
+        </div>
+        <div class="footer__img img-wrap mobile--hide">
+          <div>
+            <picture>
+              <source srcset="assets/images/png/footer-img.webp" type="image/webp"><img src="assets/images/png/footer-img.png" alt="">
+            </picture>
+          </div>
+        </div>
+      </div>
+      <div class="footer__right">
+        <div class="footer__right-wrap">
+          <div class="footer__column">
+            <div class="footer__column-title">Solutions:</div>
+            <ul class="footer__column-list">
+              <li class="footer__column-item"> <a class="footer__column-link" href="/">Dispatch Board</a></li>
+              <li class="footer__column-item"> <a class="footer__column-link" href="/">Fleet Management</a></li>
+              <li class="footer__column-item"> <a class="footer__column-link" href="/">Driver`s App</a></li>
+              <li class="footer__column-item"> <a class="footer__column-link" href="/">Payroll & Accounti</a></li>
+              <li class="footer__column-item"> <a class="footer__column-link" href="/">HR</a></li>
+              <li class="footer__column-item"> <a class="footer__column-link" href="/">Trip Calculator</a></li>
+            </ul>
+          </div>
+          <div class="footer__column">
+            <div class="footer__column-title">Our contacts:</div>
+            <ul class="footer__column-list">
+              <li class="footer__column-item">
+                <p>Phone:</p><a class="footer__column-link" href="tel:(470) 977-3456" target="_blank">(470) 977-3456</a>
+              </li>
+              <li class="footer__column-item"> 
+                <p>Email:</p><a class="footer__column-link" href="mailto:info@atlassys-tms.com" target="_blank"> info@atlassys-tms.com</a>
+              </li>
+              <li class="footer__column-item footer__column-item--address">
+                <p class="desktop--hide">Office Address: </p><a class="footer__column-link footer__column-link--before" href="/" target="_blank">Office Address: 11340 Lakefield, Dr Suite 200, Johns Creek, GA</a>
+              </li>
+              <li class="footer__column-item footer__column-item--code">
+                <p>30097</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__column-bottom">
+          <div class="footer__rating mobile--hide">
+            <div class="footer__rating-value">4.8</div>
+            <div class="footer__rating-right">
+              <div class="star-rating">
+                <input id="5-starsd" type="radio" name="1ratingd" value="15">
+                <label class="star" for="5-starsd">★</label>
+                <input id="4-starsd" type="radio" name="1ratingd" value="14" checked="checked">
+                <label class="star" for="4-starsd">★</label>
+                <input id="3-starsd" type="radio" name="1ratingd" value="13">
+                <label class="star" for="3-starsd">★</label>
+                <input id="2-starsd" type="radio" name="1ratingd" value="12">
+                <label class="star" for="2-starsd">★</label>
+                <input id="1-starsd" type="radio" name="1ratingd" value="11">
+                <label class="star" for="1-starsd">★</label>
+              </div>
+              <div class="footer__rating-info">based on: <span>441</span></div>
+            </div>
+          </div>
+          <div class="footer__socials"> 
+            <div class="socials"><a class="socials__link img-wrap" href="/" target="_blank" aria-label="Socials link">
+                <div>
+                  <picture>
+                    <source srcset="assets/images/png/inst.webp" type="image/webp"><img src="assets/images/png/inst.png" alt="">
+                  </picture>
+                </div></a><a class="socials__link img-wrap" href="/" target="_blank" aria-label="Socials link">
+                <div>
+                  <picture>
+                    <source srcset="assets/images/png/fac.webp" type="image/webp"><img src="assets/images/png/fac.png" alt="">
+                  </picture>
+                </div></a><a class="socials__link img-wrap" href="/" target="_blank" aria-label="Socials link">
+                <div>
+                  <picture>
+                    <source srcset="assets/images/png/link.webp" type="image/webp"><img src="assets/images/png/link.png" alt="">
+                  </picture>
+                </div></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+      </div>
+    </div>
+<div class="mobile-menu">
+  <div class="mobile-menu__wrap">
+    <nav class="mobile-menu__nav">
+      <ul class="mobile-menu__nav-list">
+        <li class="mobile-menu__nav-item"><a class="mobile-menu__nav-link" href="/">Cloud platform</a></li>
+        <li class="mobile-menu__nav-item mobile-menu__nav-item--drop">
+          <div class="mobile-menu__nav-link"> <a href="">Solutions</a>
+            <div class="mobile-menu__nav-arrow"><svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8 12L16 20L24 12" stroke="#89B4E0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+            </div>
+          </div>
+          <div class="mobile-menu__drop">
+            <ul class="mobile-menu__drop-list overflow-bl">
+              <li class="mobile-menu__drop-item"> <a class="mobile-menu__drop-link" href="/">Dispatch Board </a></li>
+              <li class="mobile-menu__drop-item"> <a class="mobile-menu__drop-link" href="/">Fleet Management</a></li>
+              <li class="mobile-menu__drop-item"> <a class="mobile-menu__drop-link" href="/">Trip Calculator</a></li>
+              <li class="mobile-menu__drop-item"> <a class="mobile-menu__drop-link" href="/">Driver`s App</a></li>
+              <li class="mobile-menu__drop-item"> <a class="mobile-menu__drop-link" href="/">Real-time tracking</a></li>
+              <li class="mobile-menu__drop-item"> <a class="mobile-menu__drop-link" href="/">Payroll & Accounting</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="mobile-menu__nav-item mobile-menu__nav-item--drop">
+          <div class="mobile-menu__nav-link"> <a href="">Industries</a>
+            <div class="mobile-menu__nav-arrow"><svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8 12L16 20L24 12" stroke="#89B4E0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+            </div>
+          </div>
+          <div class="mobile-menu__drop">
+            <ul class="mobile-menu__drop-list overflow-bl">
+              <li class="mobile-menu__drop-item"> <a class="mobile-menu__drop-link" href="/">Logistics Service </a></li>
+              <li class="mobile-menu__drop-item"> <a class="mobile-menu__drop-link" href="/">Wholesale</a></li>
+              <li class="mobile-menu__drop-item"> <a class="mobile-menu__drop-link" href="/">Manufacturing</a></li>
+              <li class="mobile-menu__drop-item"> <a class="mobile-menu__drop-link" href="/">Retail</a></li>
+              <li class="mobile-menu__drop-item"> <a class="mobile-menu__drop-link" href="/">Haigh-Tech</a></li>
+              <li class="mobile-menu__drop-item"> <a class="mobile-menu__drop-link" href="/">Pharma</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="mobile-menu__nav-item"><a class="mobile-menu__nav-link" href="/pricing.html">Pricing</a></li>
+        <li class="mobile-menu__nav-item"><a class="mobile-menu__nav-link" href="/about.html">About</a></li>
+        <li class="mobile-menu__nav-item"><a class="mobile-menu__nav-link" href="/blog.html">Blog</a></li>
+        <li class="mobile-menu__nav-item"><a class="mobile-menu__nav-link" href="/contacts.html">Contacts</a></li>
+      </ul>
+    </nav>
+  </div>
+</div>
+<div class="popup-wrap" id="thank-you">
+  <div class="popup">
+    <div class="popup__close" onclick="close_popup('thank-you')">
+      <div></div>
+      <div></div>
+    </div>
+    <div class="popup__inner">
+      <div class="popup__simple-title simple-title">Спасибо!</div>
+      <div class="popup__content content"> 
+        <p>Ваша заявка успешно отправлена.</p>
+      </div>
+    </div>
+  </div>
+</div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+  <script src="js/app.js?v=1678977488836"></script></body>
+</html>

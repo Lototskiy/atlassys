@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="description" content="Text">
+    <title> Inner Page</title>
+    <meta name="theme-color" content="#3D4356">
+    <link rel="preload" as="image" href="assets/images/png/main-bl-main.webp">
+    <link rel="preload" as="image" href="assets/images/png/main-bl-mainMob.webp"><link rel="preload" href="assets/fonts/Roboto-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+<link rel="preload" href="assets/fonts/Roboto-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" as="image" href="assets/images/svg/logo.svg">
+    <link rel="icon" type="image/png" href="assets/images/png/favicon.png">
+    <link rel="apple-touch-icon" href="assets/images/png/favicon.png"><link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.min.css" as="style" onload="this.rel='stylesheet'">
+<noscript><link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.min.css" rel="stylesheet"></noscript>
+<link rel="preload" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" as="style" onload="this.rel='stylesheet'">
+<noscript><link href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" rel="stylesheet"></noscript>
+  <link href="assets/css/app.css?v=1678977490589" rel="stylesheet"></head>
+  <body>
+<div class="preloader">
+  <div class="preloader-logo img-wrap"> 
+    <div><img src="assets/images/svg/logo.svg" alt=""></div>
+  </div>
+</div>
+<script>
+  let preloader = document.querySelector('.preloader');
+  if (!(document.referrer.indexOf('atlassys') == -1) || !(location.href.indexOf('localhost') == -1)) {
+  	preloader.remove();
+  }
+  
+  
+  setTimeout(function () {
+  	if (preloader) {
+  		setTimeout(function () {
+  			preloader.classList.add('preloader--hide');
+  		}, 2000);
+  
+  		setTimeout(function () {
+  			preloader.style.display = 'none';
+  		}, 3500);
+  	}
+  }, 500);
+</script>
+    <div class="body__wrap">
+<header class="header">
+  <div class="center-wrap">
+    <div class="header__wrap"><a class="header__logo single-anchors img-wrap" href="/home.html#home" aria-label="Logo site">
+        <div><img src="assets/images/svg/logo.svg" alt=""></div></a>
+      <nav class="header__nav mobile--hide">
+        <ul class="header__nav-list">
+          <li class="header__nav-item"><a class="header__nav-link" href="/">Cloud platform</a></li>
+          <li class="header__nav-item header__nav-item--drop"><a class="header__nav-link" href="/">Solutions</a>
+            <div class="header__drop">
+              <ul class="header__drop-list overflow-bl">
+                <li class="header__drop-item"> <a class="header__drop-link" href="/">Dispatch Board </a></li>
+                <li class="header__drop-item"> <a class="header__drop-link" href="/">Fleet Management</a></li>
+                <li class="header__drop-item"> <a class="header__drop-link" href="/">Trip Calculator</a></li>
+                <li class="header__drop-item"> <a class="header__drop-link" href="/">Driver`s App</a></li>
+                <li class="header__drop-item"> <a class="header__drop-link" href="/">Real-time tracking</a></li>
+                <li class="header__drop-item"> <a class="header__drop-link" href="/">Payroll & Accounting</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="header__nav-item header__nav-item--drop"><a class="header__nav-link" href="/">Industries</a>
+            <div class="header__drop">
+              <ul class="header__drop-list overflow-bl">
+                <li class="header__drop-item"> <a class="header__drop-link" href="/">Logistics Service</a></li>
+                <li class="header__drop-item"> <a class="header__drop-link" href="/">Wholesale</a></li>
+                <li class="header__drop-item"> <a class="header__drop-link" href="/">Manufacturing</a></li>
+                <li class="header__drop-item"> <a class="header__drop-link" href="/">Retail</a></li>
+                <li class="header__drop-item"> <a class="header__drop-link" href="/">haigh-Tech</a></li>
+                <li class="header__drop-item"> <a class="header__drop-link" href="/">Pharma</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="header__nav-item"><a class="header__nav-link" href="/pricing.html">Pricing</a></li>
+          <li class="header__nav-item"><a class="header__nav-link" href="/about.html">About</a></li>
+          <li class="header__nav-item"><a class="header__nav-link" href="/blog.html">Blog</a></li>
+          <li class="header__nav-item"><a class="header__nav-link" href="/contacts.html">Contacts</a></li>
+        </ul>
+      </nav>
+      <div class="header__btn btn mobile--hide"> 
+        <div class="btn__title">Free consultant </div>
+      </div>
+      <div class="header__burger desktop--hide">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+  </div>
+</header>
+      <div id="scrollbar">
+        <main>
+          <section class="main-bl main-bl--text mobile--hide" id="home">
+            <picture>
+              <source type="image/webp" media="(max-width: 600px)">
+              <source srcset="assets/images/png/main-bl-main.webp" type="image/webp"><img class="main-bl__bg" src="assets/images/png/main-bl-main.png" alt="">
+            </picture><a class="main-bl__down single-anchors mobile--hide" href="#down" aria-label="Scroll down">
+              <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M8 12L16 20L24 12" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg></a>
+            <div class="center-wrap">
+              <div class="main-bl__info">
+                <h1 class="main-bl__title">Dispatch Board</h1>
+                <div class="main-bl__content content"> 
+                  <p>The Dispatch Board in Atlassys TMS offers an instant snapshot of where your drivers are and which equipment is available, giving you the tools you need to make the right dispatching decisions quickly and maximize throughput.</p>
+                </div>
+                <div class="main-bl__btn"><a class="btn btn--orange" href="/">
+                    <div class="btn__title">Contact us</div></a></div>
+              </div>
+            </div>
+          </section>
+          <div class="breadcrumb">
+            <div class="center-wrap">
+              <ul class="breadcrumb__list">
+                <li class="breadcrumb__item"><a class="breadcrumb__link" href="/">Atlassys TMS</a></li>
+                <li class="breadcrumb__item"><a class="breadcrumb__link" href="#">Solutions</a></li>
+                <li class="breadcrumb__item"><a class="breadcrumb__link" href="#">Dispatch board</a></li>
+              </ul>
+            </div>
+          </div>
+          <section class="about-bl about-bl--pt" id="down">
+            <div class="center-wrap content read-more">
+              <div class="about-bl__container">
+                <div class="about-bl__container-left">
+                  <h2>Dispatch board</h2>
+                  <p>Efficiency counts when you need to coordinate the next job.Unused resources leave money on the table. Overcommitting is just asking for trouble and can cause a domino effect that slows the entire operation to a crawl.</p>
+                  <p>The Dispatch Board in Atlassys TMS offers an instant snapshot of where your drivers are and which equipment is available, giving you the tools you need to make the right dispatching decisions quickly and maximize throughput.</p>
+                  <p>Instantly access critical data:</p>
+                  <ul> 
+                    <li>Planned trips</li>
+                    <li>Trip information</li>
+                    <li>Completed trips</li>
+                    <li>Days off</li>
+                  </ul>
+                </div>
+                <div class="about-bl__container-right img-wrap">
+                  <div>
+                    <picture>
+                      <source srcset="assets/images/png/about-bl__container.webp" type="image/webp"><img src="assets/images/png/about-bl__container.png" alt="">
+                    </picture>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+<div class="feature">
+  <div class="center-wrap"> 
+    <div class="feature__wrap">
+      <div class="feature__item">
+        <h3 class="feature__item-title">.feature 1</h3>
+        <div class="feature__item-content content"> 
+          <p>Lorem ipsum dolor sit amet consectetur. Eget nulla quam condimentum non mattis eget nulla ultrices. Elit dui et et non facilisis purus semper.</p>
+        </div>
+      </div>
+      <div class="feature__item">
+        <h3 class="feature__item-title">Lower Inventory</h3>
+        <div class="feature__item-content content"> 
+          <p>Lorem ipsum dolor sit amet consectetur. Eget nulla quam condimentum non mattis eget nulla ultrices. Elit dui et et non facilisis purus semper.</p>
+        </div>
+      </div>
+      <div class="feature__item">
+        <h3 class="feature__item-title">Lower costs and expand services</h3>
+        <div class="feature__item-content content"> 
+          <p>Lorem ipsum dolor sit amet consectetur. Eget nulla quam condimentum non mattis eget nulla ultrices. Elit dui et et non facilisis purus semper.</p>
+        </div>
+      </div>
+      <div class="feature__item">
+        <h3 class="feature__item-title">Improve network collaboration</h3>
+        <div class="feature__item-content content"> 
+          <p>Lorem ipsum dolor sit amet consectetur. Eget nulla quam condimentum non mattis eget nulla ultrices. Elit dui et et non facilisis purus semper.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="progressbar">
+  <div class="center-wrap">
+    <h2 class="already__simple-title simple-title">TMS already use:</h2>
+    <div class="progressbar__container">
+      <div class="progressbar__label progressbar__label-top">% different types of companies</div>
+      <div class="progressbar__bar">
+        <div class="progressbar__bar-inner" data-width="100%">
+          <div class="progressbar__bar-item" data-width="20%" style="background:#FF9100;">
+            <div class="progressbar__bar-item-label">20% <span class="mobile--hide">logistics department</span></div>
+          </div>
+          <div class="progressbar__bar-item" data-width="40%" style="background:#366CB1;">
+            <div class="progressbar__bar-item-label">40% <span class="mobile--hide">truck companies</span></div>
+          </div>
+          <div class="progressbar__bar-item" data-width="40%" style="background:#89B4E0;">
+            <div class="progressbar__bar-item-label">40%<span class="mobile--hide">logistics companies</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="progressbar__container">
+      <div class="progressbar__label progressbar__label-top">% different types of companies</div>
+      <div class="progressbar__bar">
+        <div class="progressbar__bar-inner" data-width="100%">
+          <div class="progressbar__bar-item" data-width="20%" style="background:#FF9100;">
+            <div class="progressbar__bar-item-label">20% <span class="mobile--hide">FTL</span></div>
+          </div>
+          <div class="progressbar__bar-item" data-width="40%" style="background:#366CB1;">
+            <div class="progressbar__bar-item-label">40% <span>PTL</span></div>
+          </div>
+          <div class="progressbar__bar-item" data-width="40%" style="background:#89B4E0;">
+            <div class="progressbar__bar-item-label">40% <span class="mobile--hide">LTL</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="progressbar__container">
+      <div class="progressbar__label progressbar__label-top">% different types of companies</div>
+      <div class="progressbar__bar">
+        <div class="progressbar__bar-inner" data-width="100%">
+          <div class="progressbar__bar-item" data-width="20%" style="background:#FF9100;">
+            <div class="progressbar__bar-item-label">20% <span class="mobile--hide">Flatbed truck</span></div>
+          </div>
+          <div class="progressbar__bar-item" data-width="20%" style="background:#366CB1;">
+            <div class="progressbar__bar-item-label">20% <span class="mobile--hide">Flatbed truck</span></div>
+          </div>
+          <div class="progressbar__bar-item" data-width="20%" style="background:#558BD1;">
+            <div class="progressbar__bar-item-label">20% <span class="mobile--hide">Flatbed truck</span></div>
+          </div>
+          <div class="progressbar__bar-item" data-width="20%" style="background:#5899EC;">
+            <div class="progressbar__bar-item-label">20% <span class="mobile--hide">Flatbed truck</span></div>
+          </div>
+          <div class="progressbar__bar-item" data-width="20%" style="background:#89B4E0;">
+            <div class="progressbar__bar-item-label">20% <span class="mobile--hide">Flatbed truck</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="banner mobile--hide">
+  <div class="center-wrap"> 
+    <div class="banner__img img-wrap">
+      <div>
+        <picture>
+          <source srcset="assets/images/png/banner-im.webp" type="image/webp"><img src="assets/images/png/banner-im.png" alt="">
+        </picture>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="free">
+  <div class="center-wrap"> 
+    <div class="free__wrap">
+      <div class="free__info">
+        <div class="free__title">Try the demo version for FREE!</div>
+        <div class="free__content content"> 
+          <p>It is 100% cloud based – so you have no hardware to buy, no installations, and no setup headaches.</p>
+          <p class="desktop--hide">It is 100% cloud based – so you have no hardware to buy, no installations, and no setup headaches.</p>
+        </div>
+      </div>
+      <div class="free__btn btn btn--orange"> 
+        <div class="btn__title">Get started</div>
+      </div>
+    </div>
+  </div>
+</div>
+<section class="request">
+  <div class="center-wrap"> 
+    <div class="request__wrap"> 
+      <div class="request__left">
+        <h2 class="request__title simple-title">Request A Demo</h2>
+        <div class="request__content content"> 
+          <p>Request your no-obligation personalized demo with our product experts.</p>
+        </div>
+        <form class="inputs" action="/action_page.php" autocomplete="off">
+          <div class="inputs__field-row">
+            <div class="inputs__field-wrap">
+              <label class="inputs__label" for="text1">Company name:</label>
+              <input class="inputs__field" type="text" id="text1" name="text" autocomplete="off" required="" minlength="2">
+            </div>
+            <div class="inputs__field-wrap">
+              <label class="inputs__label" for="text2">Fleet size:</label>
+              <input class="inputs__field" type="text2" id="text2" name="text" autocomplete="off" minlength="2">
+            </div>
+          </div>
+          <div class="inputs__field-row">
+            <div class="inputs__field-wrap">
+              <label class="inputs__label" for="email">Email:</label>
+              <input class="inputs__field" type="email" id="email" placeholder="atlassys@gmail.com" name="email" autocomplete="off" required="">
+            </div>
+            <div class="inputs__field-wrap">
+              <label class="inputs__label" for="phone">Phone number:</label>
+              <input class="inputs__field" type="tel" placeholder="+1- 000 - 00 - 00 - 000" id="phone" name="tel" autocomplete="off" required="">
+            </div>
+          </div>
+          <div class="inputs__btn">
+            <button class="btn btn--orange" type="submit"><span class="btn__title">Send</span></button>
+          </div>
+        </form>
+      </div>
+      <div class="request__right">
+        <div class="img-wrap">
+          <div>
+            <picture>
+              <source srcset="assets/images/png/request-img.webp" type="image/webp"><img src="assets/images/png/request-img.png" alt="">
+            </picture>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+          <section class="about-bl" id="down">
+            <div class="center-wrap content read-more">
+              <h2>Заголовок (нижче текст на 4000 символів)</h2>
+              <div class="about-bl__wrap">
+                <p><strong>Atlassys TMS Software has an interface designed by</strong> 100+ transportation industry experts. Our commitment has resulted in Atlassys TMS being powerful, user-friendly, and easy to use.</p>
+                <p>As industry veterans, we evaluated other fleet management solutions. Existing systems each had benefits, but we also discovered issues that hindered productivity. In many cases, existing management systems lacked interoperability with other tools. The data was locked, providing only a porthole view of critical business stats.</p>
+                <h2>So, we built a better suite of trucking</h2>
+                <p>Management tools, a suite of tools with cloud-based access and permission-based links to every part of the business. We built Atlassys TMS.</p>
+                <p>We provide a best-in-class platform with your success at the forefront. With Atlassys TMS, your clients will see you as a reliable and trusted freight professional who can handle their requests smoothly. It’s not enough to just love what you do and to work hard in today’s competitive market. You have to put your back into it while investing in your futures together.</p>
+                <p><strong>Atlassys TMS Software has an interface designed by</strong> 100+ transportation industry experts. Our commitment has resulted in Atlassys TMS being powerful, user-friendly, and easy to use.</p>
+                <p>As industry veterans, we evaluated other fleet management solutions. Existing systems each had benefits, but we also discovered issues that hindered productivity. In many cases, existing management systems lacked interoperability with other tools. The data was locked, providing only a porthole view of critical business stats.</p>
+                <p><strong>So, we built a better suite of trucking</strong> management tools, a suite of tools with cloud-based access and permission-based links to every part of the business. We built Atlassys TMS.</p>
+                <p>We provide a best-in-class platform with your success at the forefront. With Atlassys TMS, your clients will see you as a reliable and trusted freight professional who can handle their requests smoothly. It’s not enough to just love what you do and to work hard in today’s competitive market. You have to put your back into it while investing in your futures together.</p>
+                <p><strong>Our competition has pricing that prevents</strong> many trucking companies from being able to afford to step into the 21st century.Atlassys TMS can help you achieve greater success at arguably the lowest cost entry point in the industry.</p>
+                <p><strong>Atlassys’ trucking software</strong> runs companies of any size, whether it’s one user doing a few loads per month or hundreds of users doing thousands of loads per week. Atlassys TMS fits any trucking company with any number of loads, locations, customers, agents, users, offices, or departments.</p>
+                <p>Not sure if it’s the right time to switch to Atlassys TMS? Try the demo version for FREE! Give Atlassys’ solutions a try right now and start evolving TODAY! It is 100% cloud-based – so you have no hardware to buy, no installations, and no setup headaches. No credit cards are needed. No contracts. No license fees. We have done everything for you, we want your business to grow alongside us.</p>
+                <p>Take the first step toward a better future today! Atlassys TMS is ready to help your company be the best it can be.</p>
+                <h2>Our competition has pricing that prevents </h2>
+                <p>Many trucking companies from being able to afford to step into the 21st century.Atlassys TMS can help you achieve greater success at arguably the lowest cost entry point in the industry.</p>
+                <p><strong>Atlassys’ trucking software</strong> runs companies of any size, whether it’s one user doing a few loads per month or hundreds of users doing thousands of loads per week. Atlassys TMS fits any trucking company with any number of loads, locations, customers, agents, users, offices, or departments.</p>
+                <p>Not sure if it’s the right time to switch to Atlassys TMS? Try the demo version for FREE! Give Atlassys’ solutions a try right now and start evolving TODAY! It is 100% cloud-based – so you have no hardware to buy, no installations, and no setup headaches. No credit cards are needed. No contracts. No license fees. We have done everything for you, we want your business to grow alongside us.</p>
+                <p>Take the first step toward a better future today! Atlassys TMS is ready to help your company be the best it can be.</p>
+              </div>
+            </div>
+          </section>
+          <section class="questions questions--padd">
+            <div class="center-wrap"> 
+              <h2 class="questions__simple-title simple-title">Popular questions about dispatch board</h2>
+              <div class="questions__content content">
+                <p>Our IT services converge business and technology experts to help to manage business processes of all categories including purchasing, deployment, and maintenance. </p>
+                <p>Grow your business efficiently.</p>
+              </div>
+              <div class="questions__wrap">
+                <div class="questions__tab toogles">
+                  <div class="questions__tab-item">
+                    <div class="questions__tab-title toogles__item-title toogles__item-title--active" data-toogles="1">
+                      <h3>Is Atlassys TMS сloud-based?</h3>
+                    </div>
+                    <div class="questions__tab-body toogles__item toogles__item--active" data-toogles="1">
+                      <div class="toogles__item-content" style="display: block;">
+                        <div>
+                          <div class="questions__tab-content content">
+                            <p>Our IT services converge business and technology experts to help to manage business processes of all categories including...</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="questions__tab-item">
+                    <div class="questions__tab-title toogles__item-title" data-toogles="2">
+                      <h3>Can you import data from other TMS?</h3>
+                    </div>
+                    <div class="questions__tab-body toogles__item" data-toogles="2">
+                      <div class="toogles__item-content">
+                        <div>
+                          <div class="questions__tab-content content">
+                            <p>It will help companies to minimize human errors, reduce costs by optimizing all operations, to improve customer service.</p>
+                            <p>It will help companies to minimize human errors, reduce costs by optimizing all operations, to improve customer service.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="questions__tab-item">
+                    <div class="questions__tab-title toogles__item-title" data-toogles="3">
+                      <h3>Do you have integration with Samsara?</h3>
+                    </div>
+                    <div class="questions__tab-body toogles__item" data-toogles="3">
+                      <div class="toogles__item-content">
+                        <div>
+                          <div class="questions__tab-content content">
+                            <p>It will help companies to minimize human errors, reduce costs by optimizing all operations, to improve customer service.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="questions__form">
+                  <form class="inputs" action="/action_page.php" autocomplete="off">
+                    <div class="simple-title questions__form-title desktop--hide">Send your own question</div>
+                    <div class="inputs__field-wrap inputs__field-wrap--textarea">
+                      <textarea class="inputs__field" name="textarea" required placeholder="Still have questions? Add your own question in this field."></textarea>
+                    </div>
+                    <div class="inputs__field-bottom">
+                      <div class="inputs__field-wrap">
+                        <input class="inputs__field" type="email" placeholder="Enter your email" name="email" autocomplete="off" required>
+                      </div>
+                      <div class="inputs__btn">
+                        <button class="btn btn--orange" type="submit"><span class="btn__title">Send question!</span></button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </section>
+        </main>
+<footer class="footer">
+  <div class="center-wrap">
+    <div class="footer__wrap">
+      <div class="footer__left"><a class="footer__logo single-anchors img-wrap" href="/home.html#home" aria-label="Logo site">
+          <div><img src="assets/images/svg/logo-white.svg" alt=""></div></a>
+        <div class="footer__content content"> 
+          <p>Companies that are committed to growing their business, while keeping up with today’s requirements, choose Atlassys TMS.</p>
+        </div>
+        <div class="footer__img img-wrap mobile--hide">
+          <div>
+            <picture>
+              <source srcset="assets/images/png/footer-img.webp" type="image/webp"><img src="assets/images/png/footer-img.png" alt="">
+            </picture>
+          </div>
+        </div>
+      </div>
+      <div class="footer__right">
+        <div class="footer__right-wrap">
+          <div class="footer__column">
+            <div class="footer__column-title">Solutions:</div>
+            <ul class="footer__column-list">
+              <li class="footer__column-item"> <a class="footer__column-link" href="/">Dispatch Board</a></li>
+              <li class="footer__column-item"> <a class="footer__column-link" href="/">Fleet Management</a></li>
+              <li class="footer__column-item"> <a class="footer__column-link" href="/">Driver`s App</a></li>
+              <li class="footer__column-item"> <a class="footer__column-link" href="/">Payroll & Accounti</a></li>
+              <li class="footer__column-item"> <a class="footer__column-link" href="/">HR</a></li>
+              <li class="footer__column-item"> <a class="footer__column-link" href="/">Trip Calculator</a></li>
+            </ul>
+          </div>
+          <div class="footer__column">
+            <div class="footer__column-title">Our contacts:</div>
+            <ul class="footer__column-list">
+              <li class="footer__column-item">
+                <p>Phone:</p><a class="footer__column-link" href="tel:(470) 977-3456" target="_blank">(470) 977-3456</a>
+              </li>
+              <li class="footer__column-item"> 
+                <p>Email:</p><a class="footer__column-link" href="mailto:info@atlassys-tms.com" target="_blank"> info@atlassys-tms.com</a>
+              </li>
+              <li class="footer__column-item footer__column-item--address">
+                <p class="desktop--hide">Office Address: </p><a class="footer__column-link footer__column-link--before" href="/" target="_blank">Office Address: 11340 Lakefield, Dr Suite 200, Johns Creek, GA</a>
+              </li>
+              <li class="footer__column-item footer__column-item--code">
+                <p>30097</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__column-bottom">
+          <div class="footer__rating mobile--hide">
+            <div class="footer__rating-value">4.8</div>
+            <div class="footer__rating-right">
+              <div class="star-rating">
+                <input id="5-starsd" type="radio" name="1ratingd" value="15">
+                <label class="star" for="5-starsd">★</label>
+                <input id="4-starsd" type="radio" name="1ratingd" value="14" checked="checked">
+                <label class="star" for="4-starsd">★</label>
+                <input id="3-starsd" type="radio" name="1ratingd" value="13">
+                <label class="star" for="3-starsd">★</label>
+                <input id="2-starsd" type="radio" name="1ratingd" value="12">
+                <label class="star" for="2-starsd">★</label>
+                <input id="1-starsd" type="radio" name="1ratingd" value="11">
+                <label class="star" for="1-starsd">★</label>
+              </div>
+              <div class="footer__rating-info">based on: <span>441</span></div>
+            </div>
+          </div>
+          <div class="footer__socials"> 
+            <div class="socials"><a class="socials__link img-wrap" href="/" target="_blank" aria-label="Socials link">
+                <div>
+                  <picture>
+                    <source srcset="assets/images/png/inst.webp" type="image/webp"><img src="assets/images/png/inst.png" alt="">
+                  </picture>
+                </div></a><a class="socials__link img-wrap" href="/" target="_blank" aria-label="Socials link">
+                <div>
+                  <picture>
+                    <source srcset="assets/images/png/fac.webp" type="image/webp"><img src="assets/images/png/fac.png" alt="">
+                  </picture>
+                </div></a><a class="socials__link img-wrap" href="/" target="_blank" aria-label="Socials link">
+                <div>
+                  <picture>
+                    <source srcset="assets/images/png/link.webp" type="image/webp"><img src="assets/images/png/link.png" alt="">
+                  </picture>
+                </div></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+      </div>
+    </div>
+<div class="mobile-menu">
+  <div class="mobile-menu__wrap">
+    <nav class="mobile-menu__nav">
+      <ul class="mobile-menu__nav-list">
+        <li class="mobile-menu__nav-item"><a class="mobile-menu__nav-link" href="/">Cloud platform</a></li>
+        <li class="mobile-menu__nav-item mobile-menu__nav-item--drop">
+          <div class="mobile-menu__nav-link"> <a href="">Solutions</a>
+            <div class="mobile-menu__nav-arrow"><svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8 12L16 20L24 12" stroke="#89B4E0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+            </div>
+          </div>
+          <div class="mobile-menu__drop">
+            <ul class="mobile-menu__drop-list overflow-bl">
+              <li class="mobile-menu__drop-item"> <a class="mobile-menu__drop-link" href="/">Dispatch Board </a></li>
+              <li class="mobile-menu__drop-item"> <a class="mobile-menu__drop-link" href="/">Fleet Management</a></li>
+              <li class="mobile-menu__drop-item"> <a class="mobile-menu__drop-link" href="/">Trip Calculator</a></li>
+              <li class="mobile-menu__drop-item"> <a class="mobile-menu__drop-link" href="/">Driver`s App</a></li>
+              <li class="mobile-menu__drop-item"> <a class="mobile-menu__drop-link" href="/">Real-time tracking</a></li>
+              <li class="mobile-menu__drop-item"> <a class="mobile-menu__drop-link" href="/">Payroll & Accounting</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="mobile-menu__nav-item mobile-menu__nav-item--drop">
+          <div class="mobile-menu__nav-link"> <a href="">Industries</a>
+            <div class="mobile-menu__nav-arrow"><svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8 12L16 20L24 12" stroke="#89B4E0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+            </div>
+          </div>
+          <div class="mobile-menu__drop">
+            <ul class="mobile-menu__drop-list overflow-bl">
+              <li class="mobile-menu__drop-item"> <a class="mobile-menu__drop-link" href="/">Logistics Service </a></li>
+              <li class="mobile-menu__drop-item"> <a class="mobile-menu__drop-link" href="/">Wholesale</a></li>
+              <li class="mobile-menu__drop-item"> <a class="mobile-menu__drop-link" href="/">Manufacturing</a></li>
+              <li class="mobile-menu__drop-item"> <a class="mobile-menu__drop-link" href="/">Retail</a></li>
+              <li class="mobile-menu__drop-item"> <a class="mobile-menu__drop-link" href="/">Haigh-Tech</a></li>
+              <li class="mobile-menu__drop-item"> <a class="mobile-menu__drop-link" href="/">Pharma</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="mobile-menu__nav-item"><a class="mobile-menu__nav-link" href="/pricing.html">Pricing</a></li>
+        <li class="mobile-menu__nav-item"><a class="mobile-menu__nav-link" href="/about.html">About</a></li>
+        <li class="mobile-menu__nav-item"><a class="mobile-menu__nav-link" href="/blog.html">Blog</a></li>
+        <li class="mobile-menu__nav-item"><a class="mobile-menu__nav-link" href="/contacts.html">Contacts</a></li>
+      </ul>
+    </nav>
+  </div>
+</div>
+<div class="popup-wrap" id="thank-you">
+  <div class="popup">
+    <div class="popup__close" onclick="close_popup('thank-you')">
+      <div></div>
+      <div></div>
+    </div>
+    <div class="popup__inner">
+      <div class="popup__simple-title simple-title">Спасибо!</div>
+      <div class="popup__content content"> 
+        <p>Ваша заявка успешно отправлена.</p>
+      </div>
+    </div>
+  </div>
+</div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+  <script src="js/app.js?v=1678977488836"></script></body>
+</html>
